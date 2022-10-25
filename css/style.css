@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+}
+
+html {
+    font-size: 1px;
+}
+
+.header-line {
+    height: 55rem;
+    background-color: #1f1f56;
+}
+
+.header-line-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 15rem;
+    width: 960rem;
+}
+
+.navigation {
+    display: flex;
+    column-gap: 32rem;
+}
+
+.navigation a {
+    color: #b1b1d2;
+    font-size: 14rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 24rem;
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    color: #fd8300;
+}
+
+.HataPlusContacts {
+    height: 115rem;
+    background-color: #fff;
+}
+
+.HataPlusContactsWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 29rem;
+    width: 960rem;
+}
+
+.logo img {
+    width: 220rem;
+    height: 57rem;
+}
+
+.Phone {
+    display: flex;
+    column-gap: 11rem;
+    width: 190rem;
+    height: 50rem;
+}
+
+.Phone1 {
+    display: flex;
+    column-gap: 11rem;
+    width: 190rem;
+    height: 50rem;
+}
+
+.PhoneLogo:before {
+    content: url(../css/img/phone.png);
+    width: 17rem;
+    height: 17rem;
+}
+
+.PhoneLogo1:before {
+    content: url(../css/img/phone.png);
+    width: 17rem;
+    height: 17rem;
+}
+
+.PhoneNumbers a {
+    color: #25252c;
+    font-size: 18rem;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 28rem;
+}
+
+.PhoneNumbers a:hover {
+    text-decoration: underline;
+}
+
+.PhoneNumbers1 a {
+    color: #25252c;
+    font-size: 18rem;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 24rem;
+}
+
+.PhoneNumbers1 a:hover {
+    text-decoration: underline;
+}
+
+
+.skype1 a:hover {
+    text-decoration: underline;
+}
+
+.email,
+.skype {
+    display: flex;
+    column-gap: 12rem;
+}
+
+.email a {
+    color: #25252c;
+    font-size: 16rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 28rem;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+
+.email a:first-child::before {
+    content: url(../css/img/email.png);
+    width: 18rem;
+    height: 18rem;
+}
+
+.skype a {
+    color: #25252c;
+    font-size: 16rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 24rem;
+}
+
+.skype a:hover {
+    text-decoration: underline;
+}
+
+
+
+.skype a:first-child::before {
+    content: url(../css/img/skype.png);
+    width: 19rem;
+    height: 19rem;
+}
+
+.sociality {
+    display: flex;
+    column-gap: 25rem;
+}
+
+.sociality a {
+    transition: 0.5s;
+}
+
+.sociality a:first-child::before {
+    content: url(../css/img/fb.png);
+    width: 10px;
+    height: 19px;
+}
+
+.sociality a:first-child:hover {
+    content: url(../css/img/fbhover.png);
+    width: 10px;
+    height: 19px;
+}
+
+.sociality #twitter::before {
+    content: url(../css/img/tw.png);
+    width: 18px;
+    height: 15px;
+}
+
+.sociality #twitter:hover {
+    content: url(../css/img/twhover.png);
+    width: 18px;
+    height: 15px;
+}
+
+.sociality a:last-child::before {
+    content: url(../css/img/inst.png);
+    width: 19px;
+    height: 19px;
+}
+
+.sociality a:last-child:hover {
+    content: url(../css/img/insthover.png);
+    width: 19px;
+    height: 19px;
+}
+
+.email1,
+.skype1 {
+    display: flex;
+    column-gap: 12rem;
+}
+
+.email1 a {
+    color: #25252c;
+    font-size: 16rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 24rem;
+}
+
+.FooterWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 920rem;
+}
+
+.ContactsFooter li>a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.email1 a:hover {
+    text-decoration: underline;
+}
+
+.email1 a:first-child::before {
+    content: url(../css/img/email.png);
+    width: 18rem;
+    height: 18rem;
+}
+
+.skype1 a {
+    color: #25252c;
+    font-size: 16rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 24rem;
+}
+
+.skype1 a:first-child::before {
+    content: url(../css/img/skype.png);
+    width: 19rem;
+    height: 19rem;
+}
+
+.CallButton {
+    margin-top: 12rem;
+}
+
+.CallButton a {
+    padding: 18rem 27rem 18rem 31rem;
+    color: #25252c;
+    font-size: 16rem;
+    font-weight: bold;
+    font-family: "Arial";
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    text-decoration: none;
+    line-height: 24rem;
+    transition: 0.5s;
+}
+
+.CallButton a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#image1 {
+    width: 100%;
+    height: 200rem;
+}
+
+.TheBestMonthOffer {
+    width: 100%;
+    height: 200rem;
+    text-align: center;
+    background-image: url(../css/img/Rectangle\ 9.png);
+    background-size: 100% 200rem;
+    background-repeat: no-repeat;
+}
+
+.TheBestMonthOfferText {
+    padding-top: 37rem;
+}
+
+.MonthOfferPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 185rem;
+    margin: auto;
+}
+
+.TheBestMonthOfferText p:last-child {
+    font-size: 24rem;
+    line-height: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    padding-top: 15rem;
+}
+
+.TheBestMonthOffer h2 {
+    color: #ffffff;
+    font-size: 30rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    line-height: 55rem;
+}
+
+.TheBestMonthOffer p {
+    color: #ffffff;
+    font-size: 14rem;
+    font-family: "Arial";
+    line-height: 24rem;
+}
+
+.TheBestMonthOffer h3 {
+    color: #fd8300;
+    font-size: 40rem;
+    font-weight: bold;
+    font-family: "Arial";
+    line-height: 60rem;
+}
+
+main {
+    margin-bottom: 50rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.TextAndAside {
+    display: flex;
+    margin: auto;
+    width: 960rem;
+    height: 345rem;
+}
+
+.HataPlusAbout {
+    padding-top: 20rem;
+    width: 100%;
+}
+
+h1 {
+    color: #24242b;
+    font-size: 30rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 74rem;
+}
+
+article {
+    width: 670rem;
+}
+
+article p {
+    height: 90rem;
+    color: #666666;
+    font-size: 14rem;
+    font-family: "Arial";
+    line-height: 24rem;
+}
+
+article a {
+    color: #fd8300;
+    font-size: 14rem;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: underline;
+    line-height: 55rem;
+}
+
+article a:hover {
+    text-decoration: none;
+}
+
+aside {
+    padding-top: 37rem;
+    width: 220rem;
+}
+
+.Categories {
+    width: 219rem;
+    height: 44rem;
+    background-color: #e4e4ec;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+}
+
+.Categories:last-child{
+    box-shadow: 0 0 0;
+}
+
+.CategoriesTitle h2 {
+    margin-left: 15rem;
+    color: #ffffff;
+    font-size: 16rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 44rem;
+}
+
+.CategoriesAside div:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.CategoriesTitle {
+    width: 219rem;
+    height: 45rem;
+    background-color: #1f1f56;
+    border-radius: 3rem 3rem 0 0;
+}
+
+
+.open {
+    display: none;
+}
+
+#link-to-hover:hover>.open {
+    display: block;
+}
+
+
+.Categories:hover,
+.Categories:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#cat1:hover,
+#cat1:hover a{
+    color: #666666;
+    background-color: #cecedd;
+}
+
+#cat2:hover,
+#cat2:hover a{
+    color: #666666;
+    background-color: #cecedd;
+}
+
+#cat3:hover,
+#cat3:hover a{
+    color: #666666;
+    background-color: #cecedd;
+}
+
+.Categories a {
+    margin-left: 15rem;
+    color: #25252c;
+    font-size: 14rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 44rem;
+}
+
+.Categories a:last-child {
+    float: right;
+    margin-right: 15rem;
+    height: 10rem;
+}
+
+.hr {
+    margin: auto;
+    width: 960rem;
+}
+
+hr {
+    width: 713rem;
+    height: 2rem;
+    background-color: #e4e4ec;
+    border: 0;
+}
+
+.OurProjects {
+    margin: auto;
+    width: 960rem;
+}
+
+.OurProjects h2 {
+    color: #24242b;
+    font-size: 30rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 90rem;
+}
+
+.figures {
+    display: flex;
+    column-gap: 28rem;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+}
+
+.figures h4 {
+    margin-top: 15rem;
+    color: #1f1f56;
+    font-size: 14rem;
+    font-weight: bold;
+    font-family: "Arial";
+    line-height: 24rem;
+    transition: 0.5s;
+}
+
+.figures h4:hover {
+    text-decoration: underline;
+}
+
+.figures p {
+    width: 220rem;
+    color: #9999a6;
+    font-size: 13rem;
+    font-family: "Arial";
+    line-height: 18rem;
+}
+
+figure img {
+    width: 220rem;
+    height: 150rem;
+}
+
+.ContactsFooter {
+    padding-left: 10%;
+    padding-right: 12%;
+    padding-top: 40rem;
+    height: 160rem;
+    background-color: #ededf5;
+}
+
+.ContactsFooter li>a {
+    color: #666666;
+    font-size: 14rem;
+    font-family: "Arial";
+    text-decoration: none;
+    line-height: 26rem;
+}
+
+.copyright {
+    height: 45rem;
+    text-align: center;
+    background-color: #dcdce6;
+}
+
+.copyright p {
+    padding-top: 15rem;
+    color: #9999a6;
+    font-size: 13rem;
+    font-family: "Arial";
+    line-height: 18rem;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    margin: 6rem 0;
+    width: 35rem;
+    height: 5rem;
+    background-color: black;
+
+}
+
+@media screen and (max-width:1400px) {
+    html {
+        font-size: 0.9px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    html {
+        font-size: 0.8px;
+    }
+
+    .Phone,
+    .Email-and-Skype,
+    .CallButton {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .Phone1 {
+        width: 153px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    html {
+        font-size: 0.7px;
+    }
+
+    .Phone1 {
+        width: 136px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    html {
+        font-size: 0.6px;
+    }
+
+    .Phone1 {
+        width: 120px;
+    }
+}
