@@ -503,6 +503,7 @@ hr {
 
 .figures {
     display: flex;
+    width: 730rem;
     column-gap: 28rem;
     cursor: url(../css/cursor\ \(1\).cur), auto;
 }
