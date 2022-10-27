@@ -16,6 +16,15 @@ html {
     background-color: #1f1f56;
 }
 
+.header-line ul{
+    display: flex;
+    column-gap: 25rem;
+}
+
+.header-line ul:last-child{
+    column-gap: 22rem;
+}
+
 .header-line-wrap {
     display: flex;
     justify-content: space-between;
@@ -60,6 +69,12 @@ html {
     height: 57rem;
 }
 
+.VerticalLine{
+    width: 1rem;
+    height: 50rem;
+    background-color: #e4e4ec;
+}
+
 .Phone {
     display: flex;
     column-gap: 11rem;
@@ -92,7 +107,10 @@ html {
     font-weight: bold;
     font-family: "Arial";
     text-decoration: none;
-    line-height: 28rem;
+}
+
+.Number1{
+    margin-bottom: 12rem;
 }
 
 .PhoneNumbers a:hover {
@@ -123,12 +141,15 @@ html {
     column-gap: 12rem;
 }
 
+.email{
+    margin-bottom: 12rem;
+}
+
 .email a {
     color: #25252c;
     font-size: 16rem;
     font-family: "Arial";
     text-decoration: none;
-    line-height: 28rem;
 }
 
 .email a:hover {
@@ -147,7 +168,6 @@ html {
     font-size: 16rem;
     font-family: "Arial";
     text-decoration: none;
-    line-height: 24rem;
 }
 
 .skype a:hover {
@@ -171,13 +191,13 @@ html {
     transition: 0.5s;
 }
 
-.sociality a:first-child::before {
+#facebook:before {
     content: url(../css/img/fb.png);
     width: 10px;
     height: 19px;
 }
 
-.sociality a:first-child:hover {
+#facebook:hover {
     content: url(../css/img/fbhover.png);
     width: 10px;
     height: 19px;
@@ -243,6 +263,14 @@ html {
     height: 18rem;
 }
 
+.TheBestMonthOffer sup{
+    font-size: 15rem;
+}
+
+sup{
+    font-size: 8rem;
+}
+
 .skype1 a {
     color: #25252c;
     font-size: 16rem;
@@ -262,7 +290,7 @@ html {
 }
 
 .CallButton a {
-    padding: 18rem 27rem 18rem 31rem;
+    padding: 14rem 27rem 16rem 27rem;
     color: #25252c;
     font-size: 16rem;
     font-weight: bold;
@@ -289,7 +317,7 @@ html {
     width: 100%;
     height: 200rem;
     text-align: center;
-    background-image: url(../css/img/Rectangle\ 9.png);
+    background-image: url(../css/img/MonthProposition.png);
     background-size: 100% 200rem;
     background-repeat: no-repeat;
 }
@@ -416,7 +444,7 @@ aside {
     line-height: 44rem;
 }
 
-.CategoriesAside div:last-child {
+#CategoriesLast {
     border-radius: 0 0 3px 3px;
 }
 
@@ -461,6 +489,10 @@ aside {
     background-color: #cecedd;
 }
 
+#cat3{
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
+}
+
 .Categories a {
     margin-left: 15rem;
     color: #25252c;
@@ -483,7 +515,7 @@ aside {
 
 hr {
     width: 713rem;
-    height: 2rem;
+    height: 1rem;
     background-color: #e4e4ec;
     border: 0;
 }
@@ -494,11 +526,12 @@ hr {
 }
 
 .OurProjects h2 {
+    font-size: 24px;
+    line-height: 24px;
     color: #24242b;
-    font-size: 30rem;
     font-weight: 700;
     font-family: "Roboto Slab";
-    line-height: 90rem;
+    line-height: 80rem;
 }
 
 .figures {

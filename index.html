@@ -17,16 +17,24 @@
         <div class="header-line">
             <div class="header-line-wrap">
                 <div class="navigation">
-                    <a href="#">Головна</a>
-                    <a href="#">Про компанію</a>
-                    <a href="#">Наші будівлі</a>
-                    <a href="#">Акції</a>
-                    <a href="#">Контакти</a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Про компанію</a></li>
+                            <li><a href="#">Наші будівлі</a></li>
+                            <li><a href="#">Акції</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="sociality">
-                    <a href="#"></a>
-                    <a id="twitter" href="#"></a>
-                    <a href="#"></a>
+                    <nav>
+                        <ul>
+                            <li><a id="facebook" href="#"></a></li>
+                            <li><a id="twitter" href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -43,10 +51,11 @@
                 <div class="Phone">
                     <a class="PhoneLogo" href="tel:+380971002525"></a>
                     <div class="PhoneNumbers">
-                        <a href="tel:+380971002525">+38(097) 100-25-25</a>
-                        <a href="tel:+380971002525">+38(097) 100-25-25</a>
+                        <div class="Number1"><a href="tel:+380971002525">+38(097) 100-25-25</a></div>
+                        <div class="Number2"><a href="tel:+380971002525">+38(097) 100-25-25</a></div>
                     </div>
                 </div>
+                <span class="VerticalLine"></span>
                 <div class="Email-and-Skype">
                     <div class="email">
                         <a href="mailto:hataplus@hata.com.ua"></a>
@@ -101,53 +110,51 @@
             </div>
             <aside>
                 <div class="ProjectCategory">
-                    <nav>
-                        <div class="CategoriesTitle">
-                            <h2>Категорії проектів</h2>
+                    <div class="CategoriesTitle">
+                        <h2>Категорії проектів</h2>
+                    </div>
+                    <div class="CategoriesAside">
+                        <div class="Categories">
+                            <a href="">Генеральний план</a>
+                            <a href="">&rsaquo;</a>
                         </div>
-                        <div class="CategoriesAside">
+                        <div class="CategoriesHover" id="link-to-hover">
                             <div class="Categories">
-                                <a href="">Генеральний план</a>
+                                <a href="">Навколишнє середовище</a>
                                 <a href="">&rsaquo;</a>
                             </div>
-                            <div class="CategoriesHover" id="link-to-hover">
-                                <div class="Categories">
-                                    <a href="">Навколишнє середовище</a>
+                            <div class="open">
+                                <div class="Categories" id="cat1">
+                                    <a href="">Продані</a>
                                     <a href="">&rsaquo;</a>
                                 </div>
-                                <div class="open">
-                                    <div class="Categories" id="cat1">
-                                        <a href="">Продані</a>
-                                        <a href="">&rsaquo;</a>
-                                    </div>
-                                    <div class="Categories" id="cat2">
-                                        <a href="">Заброньованні</a>
-                                        <a href="">&rsaquo;</a>
-                                    </div>
-                                    <div class="Categories" id="cat3">
-                                        <a href="">В процесі будівництва</a>
-                                        <a href="">&rsaquo;</a>
-                                    </div>
+                                <div class="Categories" id="cat2">
+                                    <a href="">Заброньованні</a>
+                                    <a href="">&rsaquo;</a>
+                                </div>
+                                <div class="Categories" id="cat3">
+                                    <a href="">В процесі будівництва</a>
+                                    <a href="">&rsaquo;</a>
                                 </div>
                             </div>
-                            <div class="Categories">
-                                <a href="">Умови придбання</a>
-                                <a href="">&rsaquo;</a>
-                            </div>
-                            <div class="Categories">
-                                <a href="">Загородні котеджі</a>
-                                <a href="">&rsaquo;</a>
-                            </div>
-                            <div class="Categories">
-                                <a href="">Інфраструктура</a>
-                                <a href="">&rsaquo;</a>
-                            </div>
-                            <div class="Categories">
-                                <a href="">Готові будинки</a>
-                                <a href="">&rsaquo;</a>
-                            </div>
                         </div>
-                    </nav>
+                        <div class="Categories">
+                            <a href="">Умови придбання</a>
+                            <a href="">&rsaquo;</a>
+                        </div>
+                        <div class="Categories">
+                            <a href="">Загородні котеджі</a>
+                            <a href="">&rsaquo;</a>
+                        </div>
+                        <div class="Categories">
+                            <a href="">Інфраструктура</a>
+                            <a href="">&rsaquo;</a>
+                        </div>
+                        <div id="CategoriesLast" class="Categories">
+                            <a href="">Готові будинки</a>
+                            <a href="">&rsaquo;</a>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -160,8 +167,8 @@
                 <figure class="edmonton">
                     <figcaption>
                         <picture>
-                            <source srcset="css/img/Layer75.webp" type="image/webp">
-                            <img src="css/img/Layer 75.jpg"
+                            <source srcset="css/img/EdmontonHouse.webp" type="image/webp">
+                            <img src="css/img/EdmontonHouse.jpg"
                                 alt="Популярний проект ХАТАПЛЮС. Будинок EDMONTON  312 м2. Великий гараж. 4 спальні">
                         </picture>
                         <h4>EDMONTON (338 м<sup>2</sup>)</h4>
@@ -173,8 +180,8 @@
                 <figure class="montreal">
                     <figcaption>
                         <picture>
-                            <source srcset="css/img/Layer76.webp" type="image/webp">
-                            <img src="css/img/Layer 76.jpg"
+                            <source srcset="css/img/MontrealHouse.webp" type="image/webp">
+                            <img src="css/img/MontrealHouse.jpg"
                                 alt="Популярний проект ХАТАПЛЮС. Будинок MONTREAL 290 м2. Великий гараж. 3 спальні">
                         </picture>
                         <h4>MONTREAL (332 м<sup>2</sup>)</h4>
@@ -186,8 +193,8 @@
                 <figure>
                     <figcaption>
                         <picture>
-                            <source srcset="css/img/Layer77.webp" type="image/webp">
-                            <img src="css/img/Layer 77.jpg"
+                            <source srcset="css/img/CalgaryHouse.webp" type="image/webp">
+                            <img src="css/img/CalgaryHouse.jpg"
                                 alt="Популярний проект ХАТАПЛЮС. Будинок CALGARY 272 м2. Великий гараж. 3 спальні">
                         </picture>
                         <h4>CALGARY (294 м<sup>2</sup>)</h4>
