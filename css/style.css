@@ -16,12 +16,12 @@ html {
     background-color: #1f1f56;
 }
 
-.header-line ul{
+.header-line ul {
     display: flex;
     column-gap: 25rem;
 }
 
-.header-line ul:last-child{
+.header-line ul:last-child {
     column-gap: 22rem;
 }
 
@@ -69,7 +69,7 @@ html {
     height: 57rem;
 }
 
-.VerticalLine{
+.VerticalLine {
     width: 1rem;
     height: 50rem;
     background-color: #e4e4ec;
@@ -109,7 +109,7 @@ html {
     text-decoration: none;
 }
 
-.Number1{
+.Number1 {
     margin-bottom: 12rem;
 }
 
@@ -141,7 +141,7 @@ html {
     column-gap: 12rem;
 }
 
-.email{
+.email {
     margin-bottom: 12rem;
 }
 
@@ -263,11 +263,11 @@ html {
     height: 18rem;
 }
 
-.TheBestMonthOffer sup{
+.TheBestMonthOffer sup {
     font-size: 15rem;
 }
 
-sup{
+sup {
     font-size: 8rem;
 }
 
@@ -431,7 +431,7 @@ aside {
     cursor: url(../css/cursor\ \(1\).cur), auto;
 }
 
-.Categories:last-child{
+.Categories:last-child {
     box-shadow: 0 0 0;
 }
 
@@ -464,32 +464,96 @@ aside {
     display: block;
 }
 
+.open>.Categories a {
+    color: #666666;
+    margin-left: 30rem;
+}
 
-.Categories:hover,
-.Categories:hover>a {
+#c1:hover,
+#c1:hover>a{
     color: #fff;
     background-color: #fd8300;
 }
 
+#c1:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 60rem;
+}
+
+#c2:hover,
+#c2:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#c2:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 15rem;
+}
+
+#c3:hover,
+#c3:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#c3:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 66rem;
+}
+
+#c4:hover,
+#c4:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#c4:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 63rem;
+}
+
+#c5:hover,
+#c5:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#c5:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 76rem;
+}
+
+#CategoriesLast:hover,
+#CategoriesLast:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+#CategoriesLast:hover>a::after{
+    content: url(../css/img/arr-asidehover.png);
+    left: 84rem;
+}
+
 #cat1:hover,
-#cat1:hover a{
+#cat1:hover a {
     color: #666666;
     background-color: #cecedd;
 }
 
 #cat2:hover,
-#cat2:hover a{
+#cat2:hover a {
     color: #666666;
     background-color: #cecedd;
 }
 
 #cat3:hover,
-#cat3:hover a{
+#cat3:hover a {
     color: #666666;
     background-color: #cecedd;
 }
 
-#cat3{
+#cat3 {
     box-shadow: inset 0rem -1rem 0rem #cecedd;
 }
 
@@ -502,10 +566,45 @@ aside {
     line-height: 44rem;
 }
 
-.Categories a:last-child {
-    float: right;
-    margin-right: 15rem;
-    height: 10rem;
+#c1 a::after {
+    left: 64rem;
+}
+
+#c2 a::after {
+    left: 18rem;
+}
+
+#c3 a::after {
+    left: 68rem;
+}
+
+#c4 a::after {
+    left: 68rem;
+}
+
+#c5 a::after {
+    left: 80rem;
+}
+
+#CategoriesLast a::after {
+    left: 89rem;
+}
+
+#cat1 a::after {
+    content: "";
+}
+
+#cat2 a::after {
+    content: "";
+}
+
+#cat3 a::after {
+    content: "";
+}
+
+.Categories a::after {
+    content: url(../css/img/arr-aside.png);
+    position: relative;
 }
 
 .hr {
@@ -515,9 +614,8 @@ aside {
 
 hr {
     width: 713rem;
-    height: 1rem;
-    background-color: #e4e4ec;
-    border: 0;
+    border: none;
+    border-top:1px solid #e4e4ec;
 }
 
 .OurProjects {
@@ -624,6 +722,10 @@ figure img {
     .Phone,
     .Email-and-Skype,
     .CallButton {
+        display: none;
+    }
+
+    .VerticalLine {
         display: none;
     }
 
