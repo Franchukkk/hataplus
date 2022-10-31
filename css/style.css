@@ -431,6 +431,14 @@ aside {
     cursor: url(../css/cursor\ \(1\).cur), auto;
 }
 
+.open>.Categories{
+    width: 219rem;
+    height: 44rem;
+    background-color: #e4e4ec;
+    box-shadow: none;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+}
+
 .Categories:last-child {
     box-shadow: 0 0 0;
 }
