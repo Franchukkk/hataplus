@@ -12,8 +12,11 @@ html {
 }
 
 .header-line {
+    position: fixed;
+    width: 100%;
     height: 55rem;
     background-color: #1f1f56;
+    z-index: 2;
 }
 
 .header-line ul {
@@ -52,6 +55,7 @@ html {
 }
 
 .HataPlusContacts {
+    padding-top: 55px;
     height: 115rem;
     background-color: #fff;
 }
@@ -89,17 +93,14 @@ html {
     height: 50rem;
 }
 
-.PhoneLogo:before {
-    content: url(../css/img/phone.png);
+a.PhoneLogo,
+a.PhoneLogo1 {
+    background-image: url(../css/img/sprites.png);
+    background-position: -52rem 126rem;
     width: 17rem;
     height: 17rem;
 }
 
-.PhoneLogo1:before {
-    content: url(../css/img/phone.png);
-    width: 17rem;
-    height: 17rem;
-}
 
 .PhoneNumbers a {
     color: #25252c;
@@ -156,9 +157,10 @@ html {
     text-decoration: underline;
 }
 
-
-.email a:first-child::before {
-    content: url(../css/img/email.png);
+.email a:first-child {
+    display: block;
+    background-image: url(../css/img/sprites.png);
+    background-position: 40rem 170rem;
     width: 18rem;
     height: 18rem;
 }
@@ -176,8 +178,10 @@ html {
 
 
 
-.skype a:first-child::before {
-    content: url(../css/img/skype.png);
+.skype a:first-child {
+    display: block;
+    background-image: url(../css/img/sprites.png);
+    background-position: 22rem 167rem;
     width: 19rem;
     height: 19rem;
 }
@@ -188,44 +192,41 @@ html {
 }
 
 .sociality a {
+    display: block;
+    background-image: url(../css/img/sprites.png);
     transition: 0.5s;
 }
 
-#facebook:before {
-    content: url(../css/img/fb.png);
+a.fb {
+    background-position: 0px 0;
     width: 10px;
     height: 19px;
 }
 
-#facebook:hover {
-    content: url(../css/img/fbhover.png);
-    width: 10px;
-    height: 19px;
-}
-
-.sociality #twitter::before {
-    content: url(../css/img/tw.png);
+a.tw {
+    background-position: -12rem 0;
     width: 18px;
     height: 15px;
 }
 
-.sociality #twitter:hover {
-    content: url(../css/img/twhover.png);
-    width: 18px;
-    height: 15px;
-}
-
-.sociality a:last-child::before {
-    content: url(../css/img/inst.png);
+a.inst {
+    background-position: -32rem 0;
     width: 19px;
     height: 19px;
 }
 
-.sociality a:last-child:hover {
-    content: url(../css/img/insthover.png);
-    width: 19px;
-    height: 19px;
+a.fb:hover {
+    background-position: 0 -20rem;
 }
+
+a.tw:hover {
+    background-position: -12rem -20rem;
+}
+
+a.inst:hover {
+    background-position: -32rem -20rem;
+}
+
 
 .email1,
 .skype1 {
@@ -279,8 +280,10 @@ sup {
     line-height: 24rem;
 }
 
-.skype1 a:first-child::before {
-    content: url(../css/img/skype.png);
+.skype1 a:first-child {
+    display: block;
+    background-image: url(../css/img/sprites.png);
+    background-position: 22rem 167rem;
     width: 19rem;
     height: 19rem;
 }
@@ -393,6 +396,11 @@ h1 {
     line-height: 74rem;
 }
 
+.asidebar{
+    display: block;
+    height: 680px;
+}
+
 article {
     width: 670rem;
 }
@@ -419,6 +427,8 @@ article a:hover {
 }
 
 aside {
+    position: sticky;
+    top: 35px;
     padding-top: 37rem;
     width: 220rem;
 }
@@ -431,7 +441,7 @@ aside {
     cursor: url(../css/cursor\ \(1\).cur), auto;
 }
 
-.open>.Categories{
+.open>.Categories {
     width: 219rem;
     height: 44rem;
     background-color: #e4e4ec;
@@ -478,67 +488,67 @@ aside {
 }
 
 #c1:hover,
-#c1:hover>a{
+#c1:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#c1:hover>a::after{
+#c1:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 60rem;
 }
 
 #c2:hover,
-#c2:hover>a{
+#c2:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#c2:hover>a::after{
+#c2:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 15rem;
 }
 
 #c3:hover,
-#c3:hover>a{
+#c3:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#c3:hover>a::after{
+#c3:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 66rem;
 }
 
 #c4:hover,
-#c4:hover>a{
+#c4:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#c4:hover>a::after{
+#c4:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 63rem;
 }
 
 #c5:hover,
-#c5:hover>a{
+#c5:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#c5:hover>a::after{
+#c5:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 76rem;
 }
 
 #CategoriesLast:hover,
-#CategoriesLast:hover>a{
+#CategoriesLast:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
 
-#CategoriesLast:hover>a::after{
+#CategoriesLast:hover>a::after {
     content: url(../css/img/arr-asidehover.png);
     left: 84rem;
 }
@@ -623,7 +633,7 @@ aside {
 hr {
     width: 713rem;
     border: none;
-    border-top:1px solid #e4e4ec;
+    border-top: 1px solid #e4e4ec;
 }
 
 .OurProjects {
@@ -716,16 +726,7 @@ figure img {
 
 }
 
-@media screen and (max-width:1400px) {
-    html {
-        font-size: 0.9px;
-    }
-}
-
 @media screen and (max-width:1150px) {
-    html {
-        font-size: 0.8px;
-    }
 
     .Phone,
     .Email-and-Skype,
@@ -747,10 +748,6 @@ figure img {
 }
 
 @media screen and (max-width:1050px) {
-    html {
-        font-size: 0.7px;
-    }
-
     .Phone1 {
         width: 136px;
     }
