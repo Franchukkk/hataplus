@@ -35,8 +35,8 @@ html {
 .header-line {
     position: fixed;
     width: 100%;
-    height: 55rem;
     background-color: #1f1f56;
+    padding: 15.5px 0;
     z-index: 2;
 }
 
@@ -53,7 +53,6 @@ html {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-top: 15rem;
     width: 960rem;
 }
 
@@ -79,6 +78,13 @@ html {
     padding-top: 55px;
     height: 115rem;
     background-color: #fff;
+}
+
+.HataPlusContacts1 {
+    padding-top: 55px;
+    height: 115rem;
+    background-color: #fff;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
 }
 
 .HataPlusContactsWrap {
@@ -263,6 +269,10 @@ a.inst:hover {
     line-height: 24rem;
 }
 
+footer {
+    margin-top: 45px;
+}
+
 .FooterWrap {
     display: flex;
     justify-content: space-between;
@@ -417,7 +427,7 @@ h1 {
     line-height: 74rem;
 }
 
-.asidebar{
+.asidebar {
     display: block;
     height: 680px;
 }
@@ -496,11 +506,15 @@ aside {
 
 
 .open {
-    display: none;
+    max-height: 0;
+    visibility: hidden;
+    
 }
 
 #link-to-hover:hover>.open {
-    display: block;
+    max-height: 1000px;
+    visibility: visible;
+    transition: max-height 1.2s;
 }
 
 .open>.Categories a {
@@ -782,4 +796,269 @@ figure img {
     .Phone1 {
         width: 120px;
     }
+}
+
+/* index2.html */
+
+.OurBuilds,
+.contacts-and-geo {
+    margin: auto;
+    width: 960px;
+    margin-top: 40px;
+}
+
+.OurBuilds h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.OurBuilds p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.OurBuilds p:last-child {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.paragraph {
+    margin-top: 22px;
+    margin-bottom: 26px;
+}
+
+.OurBuilds table {
+    width: 960px;
+    border-collapse: collapse;
+}
+
+
+.OurBuilds thead {
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1f1f56;
+}
+
+.OurBuilds th {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: left;
+    padding-left: 20px;
+}
+
+.OurBuilds th:last-child {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: right;
+    padding-right: 20px;
+}
+
+.OurBuilds td {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    padding-left: 20px;
+}
+
+.OurBuilds tbody tr {
+    width: 960px;
+    height: 41px;
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+}
+
+.OurBuilds tr>td:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.OurBuilds tbody tr:hover {
+    background-color: #fd8300;
+}
+
+.OurBuilds .tr1:hover>td,
+.OurBuilds .tr2:hover>td,
+.OurBuilds .tr3:hover>td,
+.OurBuilds .tr4:hover>td,
+.OurBuilds .tr5:hover>td {
+    color: #fff;
+}
+
+.OurBuilds a {
+    font-size: 14px;
+    line-height: 4em;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.OurBuilds a:hover {
+    color: #1f1f56;
+    text-decoration: none;
+}
+
+#hr2 {
+    border: none;
+    border-top: 1px solid #e4e4ec;
+    width: 960px;
+}
+
+.paragraph2 {
+    margin-top: 20px;
+}
+
+/* index3.html */
+
+.contacts-container {
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.container:last-child {
+    width: 255px;
+}
+
+.contacts-and-geo h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 27rem;
+}
+
+.container h4 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 20px;
+}
+
+
+.container p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.container:first-child a {
+    font-size: 18px;
+    line-height: 1.65em;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.container a {
+    font-size: 18px;
+    line-height: 1.95em;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.phones-container {
+    width: 160rem;
+}
+
+.container .mailto {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.p-last {
+    width: 216rem;
+}
+
+.contacts-geo {
+    margin-bottom: 33rem;
+}
+
+.geolocation {
+    display: flex;
+    column-gap: 27px;
+}
+
+input {
+    width: 220px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+
+}
+
+.callform h4 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.callform th {
+    width: 228rem;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+.callform td {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+.message-tema {
+    width: 460px;
+}
+
+.send {
+    width: 80.36px;
+    border-radius: 21px;
+    background-color: #fd8300;
+    padding: 12rem 31rem;
+}
+
+.send a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    text-decoration: none;
+}
+
+.send:hover{
+    background-color: #fff;
+}
+.send:hover a{
+    color: #000;
 }
