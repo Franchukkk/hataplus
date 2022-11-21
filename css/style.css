@@ -514,6 +514,9 @@ main {
     padding-right: 10%;
 }
 
+.flex{
+    display: flex;
+}
 
 .HataPlusAbout {
     padding-top: 20rem;
@@ -565,14 +568,12 @@ aside {
     top: 35px;
     padding-top: 37rem;
     width: 220rem;
-    height: 640px;
 }
 
 .TextAndAside {
-    display: flex;
+    display: block;
     margin: auto;
-    width: 960rem;
-    height: 345rem;
+    width: 715rem;
 }
 
 .aside-bar {
