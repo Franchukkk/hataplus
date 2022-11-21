@@ -290,8 +290,6 @@ a {
 .flex-between {
     display: flex;
     justify-content: space-between;
-    column-gap: 25rem;
-    row-gap: 25rem;
 }
 
 .wrapper {
