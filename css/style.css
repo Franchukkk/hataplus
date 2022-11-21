@@ -31,6 +31,10 @@ html {
     font-display: swap;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .header-line {
     position: fixed;
@@ -56,12 +60,12 @@ html {
     width: 960rem;
 }
 
-.navigation {
+.top-line-navigation {
     display: flex;
     column-gap: 32rem;
 }
 
-.navigation a {
+.top-line-navigation a {
     color: #b1b1d2;
     font-size: 14rem;
     font-family: "Arial";
@@ -70,7 +74,7 @@ html {
     transition: 0.2s;
 }
 
-.navigation a:hover {
+.top-line-navigation a:hover {
     color: #fd8300;
 }
 
@@ -100,26 +104,6 @@ html {
     height: 57rem;
 }
 
-.VerticalLine {
-    width: 1rem;
-    height: 50rem;
-    background-color: #e4e4ec;
-}
-
-.Phone {
-    display: flex;
-    column-gap: 11rem;
-    width: 190rem;
-    height: 50rem;
-}
-
-.Phone1 {
-    display: flex;
-    column-gap: 11rem;
-    width: 190rem;
-    height: 50rem;
-}
-
 a.PhoneLogo,
 a.PhoneLogo1 {
     background-image: url(../css/img/sprites.png);
@@ -136,6 +120,7 @@ a.PhoneLogo1 {
     font-family: "Arial";
     text-decoration: none;
 }
+
 
 .Number1 {
     margin-bottom: 12rem;
@@ -184,14 +169,6 @@ a.PhoneLogo1 {
     text-decoration: underline;
 }
 
-.email a:first-child {
-    display: block;
-    background-image: url(../css/img/sprites.png);
-    background-position: 40rem 170rem;
-    width: 18rem;
-    height: 18rem;
-}
-
 .skype a {
     color: #25252c;
     font-size: 16rem;
@@ -203,25 +180,68 @@ a.PhoneLogo1 {
     text-decoration: underline;
 }
 
-
-
-.skype a:first-child {
-    display: block;
-    background-image: url(../css/img/sprites.png);
-    background-position: 22rem 167rem;
-    width: 19rem;
-    height: 19rem;
+.tel,
+.mail,
+.skype {
+    position: relative;
 }
 
-.sociality {
+.tel:before,
+.mail:before,
+.skype:before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 3rem;
+    background-image: url(../css/img/sprites.png);
+}
+
+.tel:before {
+    height: 17rem;
+    width: 16rem;
+    background-position: -53rem 0;
+}
+
+.mail:before {
+    height: 13px;
+    width: 17px;
+    background-position: -71rem 0;
+}
+
+.skype:before {
+    height: 19rem;
+    width: 18rem;
+    background-position: -90rem 0;
+}
+
+
+.line {
+    position: relative;
+}
+
+.line:before {
+    content: '';
+    position: absolute;
+    left: -18rem;
+    width: 1rem;
+    height: 51rem;
+    background-color: #e4e4ec;
+}
+
+.sociality-messengers {
     display: flex;
     column-gap: 25rem;
 }
 
-.sociality a {
+.sociality-messengers a {
     display: block;
-    background-image: url(../css/img/sprites.png);
     transition: 0.5s;
+}
+
+.fb,
+.tw,
+.inst {
+    background-image: url(../css/img/sprites.png);
 }
 
 a.fb {
@@ -255,6 +275,123 @@ a.inst:hover {
 }
 
 
+
+a {
+    text-decoration: none;
+}
+
+.top-line-contacts {
+    align-items: center;
+    padding: 30px 0;
+    padding-top: 80rem;
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25rem;
+    row-gap: 25rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 960rem;
+}
+
+.contacts,
+.messenger {
+    padding-left: 38px;
+}
+
+.contacts p:first-child,
+.messenger p:first-child {
+    margin-bottom: 10px;
+}
+
+.contacts a {
+    color: #25252c;
+    font-size: 18rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.messenger a:hover {
+    text-decoration: underline;
+}
+
+.phone,
+.email,
+.skype {
+    position: relative;
+}
+
+.phone::before,
+.email::before,
+.skype::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: -29rem;
+    background: url(../css/img/sprites.png);
+}
+
+.skype::before{
+    top: 0rem;
+}
+
+.phone::before {
+    background-position: -53rem 0;
+    width: 16rem;
+    height: 17rem;
+}
+
+
+.email::before {
+    background-position: -71rem 0;
+    width: 17rem;
+    height: 13rem;
+}
+
+.messenger a {
+    color: #25252c;
+    font-size: 16rem;
+}
+
+.skype::before {
+    background-position: -90rem 0;
+    width: 18rem;
+    height: 19rem;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 14rem 30rem;
+    background-color: #fff;
+    color: #25252c;
+    font-size: 16rem;
+    font-weight: bold;
+    border-radius: 28rem;
+    border: 2rem solid #fd8300;
+    transition: 0.5s;
+}
+
+.cta a:hover {
+    color: #fff;
+    background-color: #fd8300;
+
+}
+
+
+
+
+
+
 .email1,
 .skype1 {
     display: flex;
@@ -285,38 +422,12 @@ footer {
     text-decoration: underline;
 }
 
-.email1 a:hover {
-    text-decoration: underline;
-}
-
-.email1 a:first-child::before {
-    content: url(../css/img/email.png);
-    width: 18rem;
-    height: 18rem;
-}
-
 .TheBestMonthOffer sup {
     font-size: 15rem;
 }
 
 sup {
     font-size: 8rem;
-}
-
-.skype1 a {
-    color: #25252c;
-    font-size: 16rem;
-    font-family: "Arial";
-    text-decoration: none;
-    line-height: 24rem;
-}
-
-.skype1 a:first-child {
-    display: block;
-    background-image: url(../css/img/sprites.png);
-    background-position: 22rem 167rem;
-    width: 19rem;
-    height: 19rem;
 }
 
 .CallButton {
@@ -351,9 +462,7 @@ sup {
     width: 100%;
     height: 200rem;
     text-align: center;
-    background-image: url(../css/img/MonthProposition.png);
-    background-size: 100% 200rem;
-    background-repeat: no-repeat;
+    background: #211f15 url(../css/img/MonthProposition.jpg) center / cover;
 }
 
 .TheBestMonthOfferText {
@@ -407,12 +516,6 @@ main {
     padding-right: 10%;
 }
 
-.TextAndAside {
-    display: flex;
-    margin: auto;
-    width: 960rem;
-    height: 345rem;
-}
 
 .HataPlusAbout {
     padding-top: 20rem;
@@ -427,10 +530,7 @@ h1 {
     line-height: 74rem;
 }
 
-.asidebar {
-    display: block;
-    height: 680px;
-}
+
 
 article {
     width: 670rem;
@@ -464,200 +564,112 @@ aside {
     width: 220rem;
 }
 
-.Categories {
-    width: 219rem;
-    height: 44rem;
-    background-color: #e4e4ec;
-    box-shadow: inset 0rem -1rem 0rem #cecedd;
-    cursor: url(../css/cursor\ \(1\).cur), auto;
+
+
+.TextAndAside {
+    display: flex;
+    margin: auto;
+    width: 960rem;
+    height: 345rem;
 }
 
-.open>.Categories {
-    width: 219rem;
-    height: 44rem;
-    background-color: #e4e4ec;
-    box-shadow: none;
-    cursor: url(../css/cursor\ \(1\).cur), auto;
+
+
+.aside-bar {
+    position: sticky;
+    top: 35rem;
+    width: 220rem;
+    border-radius: 3rem;
+    overflow: hidden;
 }
 
-.Categories:last-child {
-    box-shadow: 0 0 0;
-}
-
-.CategoriesTitle h2 {
-    margin-left: 15rem;
-    color: #ffffff;
-    font-size: 16rem;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    line-height: 44rem;
-}
-
-#CategoriesLast {
-    border-radius: 0 0 3px 3px;
-}
-
-.CategoriesTitle {
-    width: 219rem;
-    height: 45rem;
+.aside-bar p {
+    color: #fff;
+    padding: 12rem 15rem;
+    margin: 0;
+    font: bold 16rem "Roboto Slab";
     background-color: #1f1f56;
-    border-radius: 3rem 3rem 0 0;
 }
 
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-.open {
+.menu-bar > li > a {
+    position: relative;
+    color: #25252c;
+}
+
+.menu-bar a {
+    display: block;
+    font-size: 14rem;
+    background-color: #e4e4ec;
+    padding: 12rem 15rem;
+}
+
+.menu-bar > li:hover > a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+ul.sub-menu a {
+    padding-left: 30rem;
+    color: #666;
+}
+
+.sub-menu {
     max-height: 0;
     visibility: hidden;
-
 }
 
-#link-to-hover:hover>.open {
-    max-height: 1000px;
-    visibility: visible;
-    transition: max-height 1.2s;
-}
-
-.open>.Categories a {
-    color: #666666;
-    margin-left: 30rem;
-}
-
-#c1:hover,
-#c1:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#c1:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 60rem;
-}
-
-#c2:hover,
-#c2:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#c2:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 15rem;
-}
-
-#c3:hover,
-#c3:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#c3:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 66rem;
-}
-
-#c4:hover,
-#c4:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#c4:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 63rem;
-}
-
-#c5:hover,
-#c5:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#c5:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 76rem;
-}
-
-#CategoriesLast:hover,
-#CategoriesLast:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-#CategoriesLast:hover>a::after {
-    content: url(../css/img/arr-asidehover.png);
-    left: 84rem;
-}
-
-#cat1:hover,
-#cat1:hover a {
-    color: #666666;
-    background-color: #cecedd;
-}
-
-#cat2:hover,
-#cat2:hover a {
-    color: #666666;
-    background-color: #cecedd;
-}
-
-#cat3:hover,
-#cat3:hover a {
-    color: #666666;
-    background-color: #cecedd;
-}
-
-#cat3 {
-    box-shadow: inset 0rem -1rem 0rem #cecedd;
-}
-
-.Categories a {
-    margin-left: 15rem;
-    color: #25252c;
+.menu-bar a {
+    display: block;
+    padding: 12rem 15rem;
     font-size: 14rem;
-    font-family: "Arial";
-    text-decoration: none;
-    line-height: 44rem;
+    background-color: #e4e4ec;
 }
 
-#c1 a::after {
-    left: 64rem;
+.menu-bar > li > a:before {
+    content: '';
+    position: absolute;
+    top: 16rem;
+    right: 15rem;
+    width: 7rem;
+    height: 7rem;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
 }
 
-#c2 a::after {
-    left: 18rem;
+.menu-bar > li:hover a:before {
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
 }
 
-#c3 a::after {
-    left: 68rem;
+.menu-bar a {
+    display: block;
+    padding: 12rem 15rem;
+    font-size: 14rem;
+    background-color: #e4e4ec;
 }
 
-#c4 a::after {
-    left: 68rem;
+.menu-bar li:hover .sub-menu {
+    max-height: 1000rem;
+    visibility: visible;
+    transition: max-height 1.5s ease;
 }
 
-#c5 a::after {
-    left: 80rem;
+.menu-bar > li + li > a {
+    border-top: 1px solid #cdcddd;
 }
 
-#CategoriesLast a::after {
-    left: 89rem;
-}
-
-#cat1 a::after {
-    content: "";
-}
-
-#cat2 a::after {
-    content: "";
-}
-
-#cat3 a::after {
-    content: "";
-}
-
-.Categories a::after {
-    content: url(../css/img/arr-aside.png);
-    position: relative;
+.sub-menu a:hover {
+    background-color: #cecedd;
 }
 
 .hr {
@@ -671,12 +683,7 @@ hr {
     border-top: 1px solid #e4e4ec;
 }
 
-.OurProjects {
-    margin: auto;
-    width: 960rem;
-}
-
-.OurProjects h2 {
+.OurHouses h2 {
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
@@ -691,7 +698,7 @@ hr {
     column-gap: 28rem;
 }
 
-figure{
+figure {
     position: relative;
 }
 
@@ -700,10 +707,16 @@ figure{
     color: #1f1f56;
     font-size: 14rem;
     font-weight: bold;
+    text-transform: uppercase;
     font-family: "Arial";
     line-height: 24rem;
     transition: 0.5s;
 }
+
+.figures b{
+    text-transform: lowercase;
+}
+
 .figures p {
     width: 220rem;
     color: #9999a6;
@@ -723,7 +736,7 @@ figure img {
     height: 100%;
 }
 
-.figurehref:hover~h4{
+.figurehref:hover~h4 {
     text-decoration: underline;
 }
 
@@ -774,10 +787,6 @@ figure img {
     .Phone,
     .Email-and-Skype,
     .CallButton {
-        display: none;
-    }
-
-    .VerticalLine {
         display: none;
     }
 
@@ -929,6 +938,7 @@ figure img {
     border: none;
     border-top: 1px solid #e4e4ec;
     width: 960px;
+    margin-bottom: 36rem;
 }
 
 .paragraph2 {
@@ -944,7 +954,11 @@ figure img {
 }
 
 .container:last-child {
-    width: 255px;
+    width: 260px;
+}
+
+.container:last-child p {
+    margin-bottom: 20rem;
 }
 
 .contacts-and-geo h2 {
@@ -982,6 +996,8 @@ figure img {
     text-decoration: none;
 }
 
+
+
 .container a {
     font-size: 18px;
     line-height: 1.95em;
@@ -989,13 +1005,18 @@ figure img {
     font-weight: bold;
     font-family: "Arial";
     text-decoration: none;
+    box-shadow: 1;
+}
+
+.container a:hover {
+    text-decoration: underline;
 }
 
 .phones-container {
     width: 160rem;
 }
 
-.container .mailto {
+.container a.mailto {
     font-size: 16px;
     line-height: 24px;
     text-decoration: underline;
@@ -1013,15 +1034,21 @@ figure img {
 
 .geolocation {
     display: flex;
-    column-gap: 27px;
+    column-gap: 10px;
+}
+
+.geolocation table {
+    border-spacing: 10px;
+}
+
+.geolocation table>td:last-child {
+    height: 100px;
 }
 
 input {
-    width: 220px;
     border: none;
     outline: none;
     padding-left: 15px;
-
 }
 
 .callform h4 {
@@ -1030,6 +1057,7 @@ input {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-left: 12rem;
 }
 
 .callform th {
@@ -1049,6 +1077,10 @@ input {
 
 .message-tema {
     width: 460px;
+}
+
+td.td-text {
+    padding-bottom: 80px;
 }
 
 .send {
@@ -1074,4 +1106,35 @@ input {
 
 .send:hover a {
     color: #000;
+}
+
+.bottom-undertable {
+    display: flex;
+    column-gap: 30rem;
+}
+
+.tick {
+    padding-top: 15px;
+}
+
+.bottom-undertable .tick a:last-child {
+    font-size: 13rem;
+    line-height: 21rem;
+    color: #666666;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.bottom-undertable .tick a:first-child::before {
+    content: url(../css/img/notick.png);
+    position: relative;
+    top: 2rem;
+    margin-right: 10px;
+}
+
+.bottom-undertable .tick a:first-child::before {
+    content: url(../css/img/tick.png);
+    position: relative;
+    top: 2rem;
+    margin-right: 10px;
 }
