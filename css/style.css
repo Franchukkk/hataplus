@@ -555,14 +555,17 @@ article a:hover {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
 aside {
     position: sticky;
     top: 35px;
     padding-top: 37rem;
     width: 220rem;
+    height: 640px;
 }
-
-
 
 .TextAndAside {
     display: flex;
@@ -570,8 +573,6 @@ aside {
     width: 960rem;
     height: 345rem;
 }
-
-
 
 .aside-bar {
     position: sticky;
@@ -688,6 +689,7 @@ hr {
     font-family: "Roboto Slab";
     line-height: 80rem;
 }
+
 
 .figures {
     display: flex;
@@ -821,7 +823,7 @@ figure img {
     margin-top: 40px;
 }
 
-.OurBuilds h2 {
+.OurBuilds h1 {
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
