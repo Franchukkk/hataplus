@@ -560,11 +560,12 @@ article a:hover {
 }
 
 aside {
+    display: block;
     position: sticky;
     top: 35px;
     padding-top: 37rem;
     width: 220rem;
-    height: 640px;
+    max-height: 640px;
 }
 
 .TextAndAside {
