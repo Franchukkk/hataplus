@@ -11,56 +11,57 @@
 
 <body>
     <header>
-        <div class="header-line">
-            <div class="wrapper flex-between">
-                <div class="top-line-navigation">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="#">Про компанію</a></li>
-                            <li><a href="index2.html">Наші будівлі</a></li>
-                            <li><a href="#">Акції</a></li>
-                            <li><a href="index3.html">Контакти</a></li>
-                        </ul>
-                    </nav>
+            <div class="header-line">
+                <div class="wrapper flex-between">
+                    <div class="top-line-navigation">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="#">Про компанію</a></li>
+                                <li><a href="index2.html">Наші будівлі</a></li>
+                                <li><a href="#">Акції</a></li>
+                                <li><a href="index3.html">Контакти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sociality-messengers">
+                        <nav>
+                            <ul class="align-center">
+                                <li><a class="fb" href="#"></a></li>
+                                <li><a class="tw" href="#"></a></li>
+                                <li><a class="inst" href="#"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="sociality-messengers">
-                    <nav>
-                        <ul>
-                            <li><a class="fb" href="#"></a></li>
-                            <li><a class="tw" href="#"></a></li>
-                            <li><a class="inst" href="#"></a></li>
-                        </ul>
-                    </nav>
+            </div>
+        <div class="top-line-contacts box-shadow">
+            <div class="wrapper flex-between align-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="css/img/logo.webp" type="image/webp">
+                            <img src="css/img/logo.png" alt="Логотип компанії по будівництву будтнків ХатаПлюс">
+                        </picture>
+                    </a>
+                </div>
+                <div class="contacts">
+                    <p><a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                    <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                </div>
+                <div class="messenger line">
+                    <p><a class="email" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                    <p><a class="skype" href="skype:hataplus">hataplus</a></p>
+                </div>
+                <div class="cta">
+                    <a href="#">Замовити дзвінок</a>
                 </div>
             </div>
-
         </div>
-        <div class="top-line-navigation wrapper flex-between">
-            <div class="logo">
-                <a href="index.html">
-                    <picture>
-                        <source srcset="css/img/logo.webp" type="image/webp">
-                        <img src="css/img/logo.png" alt="Логотип компанії по будівництву будинків ХатаПлюс">
-                    </picture>
-                </a>
-            </div>
-            <div class="contacts">
-                <p><a class="phone" href="tel:+380971002525">+380(97) 100-25-25</a></p>
-                <p><a href="tel:+380971002525">+380(97) 100-25-25</a></p>
-            </div>
-            <div class="messenger line">
-                <p><a class="email" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                <p><a class="skype" href="skype:hataplus">hataplus</a></p>
-            </div>
-            <div class="cta">
-                <a href="#">Замовити дзвінок</a>
-            </div>
-        </div>
-        <div class="contacts-and-geo">
+        <div class="contacts-and-geo wrapper">
             <div class="contacts-geo">
                 <h2>Контакти</h2>
-                <div class="contacts-container">
+                <div class="flex-between">
                     <div class="container">
                         <h4>Наш офіс</h4>
                         <p>с. Війтівці, Хмельницька обл. 27500</p>
@@ -90,10 +91,7 @@
             </div>
             <hr id="hr2">
             <div class="geolocation">
-                <picture>
-                    <source srcset="css/img/geo.webp" type="image/webp">
-                    <img src="css/img/geo.jpg" alt="Геолокація Хатаплюс">
-                </picture>
+                <div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.5655972552404!2d26.446085711829152!3d49.49213690242563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4731e438332931c9%3A0x3c0326f1361b296c!2sGreek%20Catholic%20Church!5e0!3m2!1sru!2sua!4v1669409724856!5m2!1sru!2sua" width="466" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 <div class="callform">
                     <h4>Форма зворотнього зв’язку</h4>
                     <table>
@@ -124,8 +122,7 @@
                             <a href="">Відправити</a>
                         </div>
                         <div class="tick">
-                        <a href=""></a>
-                        <a href="">Я бажаю отримувати останні новини</a>
+                            <a href="#">Я бажаю отримувати останні новини</a>
                         </div>
                     </div>
                 </div>
@@ -133,8 +130,8 @@
         </div>
         </main>
         <footer>
-            <div class="ContactsFooter">
-                <div class="FooterWrap">
+            <div class="ContactsFooter ">
+                <div class="wrapper flex-between">
                     <ul>
                         <li>
                             <a href="#">Будинки</a>
@@ -160,24 +157,17 @@
                             <a href="#">Контакти</a>
                         </li>
                     </ul>
-                    <div class="Phone1">
-                        <a class="PhoneLogo1" href="tel:+380971002525"></a>
-                        <div class="PhoneNumbers1">
-                            <div class="Number1"><a href="tel:+380971002525">+38(097) 100-25-25</a></div>
-                            <a href="tel:+380971002525">+38(097) 100-25-25</a>
-                        </div>
+                    <div class="contacts">
+                        <p><a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                        <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                     </div>
-                    <div class="Email-and-Skype1">
-                        <div class="email1">
-                            <div class="email"><a href="mailto:hataplus@hata.com.ua"></a></div>
-                            <a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                        </div>
-                        <div class="skype1">
-                            <a href="skype:hataplus"></a>
-                            <a href="skype:hataplus">hataplus</a>
-                        </div>
+                    <div class="messenger">
+                        <p><a class="email" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                        <p><a class="skype" href="skype:hataplus">hataplus</a></p>
                     </div>
                 </div>
+            </div>
+
             </div>
             <div class="copyright">
                 <p>&COPY; Будівельна компанія “Хата Плюс” 2018.</p>
@@ -185,7 +175,7 @@
         </footer>
 
 </body>
-            <!-- <div class="asidebar">
+<!-- <div class="asidebar">
                 <aside>
                     <div class="ProjectCategory">
                         <div class="CategoriesTitle">
@@ -230,7 +220,7 @@
 
 
 
-                    <!-- <div class="HataPlusContacts">
+<!-- <div class="HataPlusContacts">
             <div class="HataPlusContactsWrap">
                 <div class="logo">
                     <a href="index.html">
@@ -275,7 +265,7 @@
 
 
 
-        <!-- /* .asidebar {
+<!-- /* .asidebar {
             display: block;
             height: 680px;
         }
@@ -479,4 +469,5 @@
             color: #25252c;
         }
         */ -->
+
 </html>

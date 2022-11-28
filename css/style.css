@@ -78,27 +78,6 @@ body {
     color: #fd8300;
 }
 
-.HataPlusContacts {
-    padding-top: 55px;
-    height: 115rem;
-    background-color: #fff;
-}
-
-.HataPlusContacts1 {
-    padding-top: 55px;
-    height: 115rem;
-    background-color: #fff;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
-}
-
-.HataPlusContactsWrap {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding-top: 29rem;
-    width: 960rem;
-}
-
 .logo img {
     width: 220rem;
     height: 57rem;
@@ -339,7 +318,7 @@ a {
     background: url(../css/img/sprites.png);
 }
 
-.skype::before{
+.skype::before {
     top: 0rem;
 }
 
@@ -514,7 +493,7 @@ main {
     padding-right: 10%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -598,7 +577,7 @@ aside {
     list-style: none;
 }
 
-.menu-bar > li > a {
+.menu-bar>li>a {
     position: relative;
     color: #25252c;
 }
@@ -610,7 +589,7 @@ aside {
     padding: 12rem 15rem;
 }
 
-.menu-bar > li:hover > a {
+.menu-bar>li:hover>a {
     color: #fff;
     background-color: #fd8300;
 }
@@ -632,7 +611,7 @@ ul.sub-menu a {
     background-color: #e4e4ec;
 }
 
-.menu-bar > li > a:before {
+.menu-bar>li>a:before {
     content: '';
     position: absolute;
     top: 16rem;
@@ -644,7 +623,7 @@ ul.sub-menu a {
     transform: rotate(-45deg);
 }
 
-.menu-bar > li:hover a:before {
+.menu-bar>li:hover a:before {
     border-bottom-color: #fff;
     border-right-color: #fff;
     transform: rotate(45deg);
@@ -664,7 +643,7 @@ ul.sub-menu a {
     transition: max-height 1.5s ease;
 }
 
-.menu-bar > li + li > a {
+.menu-bar>li+li>a {
     border-top: 1px solid #cdcddd;
 }
 
@@ -714,7 +693,7 @@ figure {
     transition: 0.5s;
 }
 
-.figures b{
+.figures b {
     text-transform: lowercase;
 }
 
@@ -728,7 +707,7 @@ figure {
 
 figure img {
     width: 220rem;
-    height: 150rem;
+
 }
 
 .figurehref {
@@ -820,8 +799,6 @@ figure img {
 
 .OurBuilds,
 .contacts-and-geo {
-    margin: auto;
-    width: 960px;
     margin-top: 40px;
 }
 
@@ -1006,10 +983,10 @@ figure img {
     font-weight: bold;
     font-family: "Arial";
     text-decoration: none;
-    box-shadow: 1;
 }
 
 .container a:hover {
+    color: #fd8300;
     text-decoration: underline;
 }
 
@@ -1025,12 +1002,21 @@ figure img {
     font-family: "Arial";
 }
 
+.container a.mailto:hover {
+    color: #fd8300;
+    text-decoration: none;
+}
+
 .p-last {
     width: 216rem;
 }
 
 .contacts-geo {
     margin-bottom: 33rem;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .geolocation {
@@ -1050,6 +1036,11 @@ input {
     border: none;
     outline: none;
     padding-left: 15px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
 }
 
 .callform h4 {
@@ -1081,14 +1072,16 @@ input {
 }
 
 td.td-text {
-    padding-bottom: 80px;
+    padding-bottom: 64px;
 }
 
 .send {
     width: 80.36px;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
     border-radius: 21px;
     background-color: #fd8300;
     padding: 12rem 31rem;
+    transition: 0.2s;
 }
 
 .send a {
@@ -1110,6 +1103,7 @@ td.td-text {
 }
 
 .bottom-undertable {
+    margin-left: 12rem;
     display: flex;
     column-gap: 30rem;
 }
@@ -1133,9 +1127,13 @@ td.td-text {
     margin-right: 10px;
 }
 
-.bottom-undertable .tick a:first-child::before {
+.bottom-undertable .tick a:first-child:hover:before {
     content: url(../css/img/tick.png);
     position: relative;
     top: 2rem;
     margin-right: 10px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
