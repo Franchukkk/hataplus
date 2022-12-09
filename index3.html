@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Будівельна Компанія ХАТА ПЛЮС. БУДИНКИ. СТРАХУВАННЯ. ІНФРАСТРУКТУРА</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="css/img/HataPlusLogo.png">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
         <div class="contacts-and-geo wrapper">
             <div class="contacts-geo">
                 <h2>Контакти</h2>
-                <div class="flex-between">
+                <div class="contacts-wrap flex-between">
                     <div class="container">
                         <h4>Наш офіс</h4>
                         <p>с. Війтівці, Хмельницька обл. 27500</p>
@@ -114,7 +115,8 @@
                             </tr>
                             <tr>
                                 <td class="td-text" colspan="2">
-                                    <textarea placeholder="Текст" name="textarea" id="textarea" cols="30" rows="6"></textarea>
+                                    <textarea placeholder="Текст" name="textarea" id="textarea" cols="30"
+                                        rows="6"></textarea>
                                 </td>
                             </tr>
                         </tbody>
@@ -126,11 +128,10 @@
                         </div>
                         <div class="tick">
                             <p>
-                                <label>
-                                    <input type="checkbox" name="tick" id="tick" checked>
-                                    <span></span>
-                                    <label for="tick">Я бажаю отримувати останні новини</label>
-                                </label>
+                               <form action="">
+                                <input class="check" id="test" type="checkbox" checked>
+                                <label for="test"><p>Я бажаю отримувати останні новини</p></label>
+                               </form>
                             </p>
                         </div>
                     </div>
@@ -182,301 +183,6 @@
                 <p>&COPY; Будівельна компанія “Хата Плюс” 2018.</p>
             </div>
         </footer>
-
 </body>
-<!-- <div class="asidebar">
-                <aside>
-                    <div class="ProjectCategory">
-                        <div class="CategoriesTitle">
-                            <h2>Категорії проектів</h2>
-                        </div>
-                        <div class="CategoriesAside">
-                            <div id="c1" class="Categories">
-                                <a href="#">Генеральний план</a>
-                            </div>
-                            <div class="CategoriesHover" id="link-to-hover">
-                                <div id="c2" class="Categories">
-                                    <a href="#">Навколишнє середовище</a>
-                                </div>
-                                <div class="open">
-                                    <div class="Categories" id="cat1">
-                                        <a href="#">Продані</a>
-                                    </div>
-                                    <div class="Categories" id="cat2">
-                                        <a href="#">Заброньованні</a>
-                                    </div>
-                                    <div class="Categories" id="cat3">
-                                        <a href="#">В процесі будівництва</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Categories" id="c3">
-                                <a href="#">Умови придбання</a>
-                            </div>
-                            <div class="Categories" id="c4">
-                                <a href="#">Загородні котеджі</a>
-                            </div>
-                            <div class="Categories" id="c5">
-                                <a href="#">Інфраструктура</a>
-                            </div>
-                            <div id="CategoriesLast" class="Categories">
-                                <a href="#">Готові будинки</a>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div> -->
-
-
-
-<!-- <div class="HataPlusContacts">
-            <div class="HataPlusContactsWrap">
-                <div class="logo">
-                    <a href="index.html">
-                        <picture>
-                            <source srcset="css/img/logo.webp" type="image/webp">
-                            <img src="css/img/logo.png" alt="HataPlus логотип">
-                        </picture>
-                    </a>
-                </div>
-
-                <div class="PhoneNumbers">
-                    <div class="Number1 tel">
-                        <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-                    </div>
-                    <div class="Number2">
-                        <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-                    </div>
-                </div>
-
-
-                <div class="messengers line">
-                    <div class="email">
-                        <p><a class="mail" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                    </div>
-                    <div class="skype">
-                        <p><a class="skype" href="skype:hataplus">hataplus</a></p>
-                    </div>
-                </div>
-
-                <div class="CallButton">
-                    <a href="tel:+380971002525">Замовити дзвінок</a>
-                </div>
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div> -->
-
-
-
-
-
-<!-- /* .asidebar {
-            display: block;
-            height: 680px;
-        }
-        .Categories {
-            width: 219rem;
-            height: 44rem;
-            background-color: #e4e4ec;
-            box-shadow: inset 0rem -1rem 0rem #cecedd;
-            cursor: url(../css/cursor\ \(1\).cur), auto;
-        }
-        
-        .open>.Categories {
-            width: 219rem;
-            height: 44rem;
-            background-color: #e4e4ec;
-            box-shadow: none;
-            cursor: url(../css/cursor\ \(1\).cur), auto;
-        }
-        
-        .Categories:last-child {
-            box-shadow: 0 0 0;
-        }
-        
-        .CategoriesTitle h2 {
-            margin-left: 15rem;
-            color: #ffffff;
-            font-size: 16rem;
-            font-weight: 700;
-            font-family: "Roboto Slab";
-            line-height: 44rem;
-        }
-        
-        #CategoriesLast {
-            border-radius: 0 0 3px 3px;
-        }
-        
-        .CategoriesTitle {
-            width: 219rem;
-            height: 45rem;
-            background-color: #1f1f56;
-            border-radius: 3rem 3rem 0 0;
-        }
-        
-        
-        .open {
-            max-height: 0;
-            visibility: hidden;
-        
-        }
-        
-        #link-to-hover:hover>.open {
-            max-height: 1000px;
-            visibility: visible;
-            transition: max-height 2s;
-        }
-        
-        .open>.Categories a {
-            color: #666666;
-            margin-left: 30rem;
-        }
-        
-        #c1:hover,
-        #c1:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #c1:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 60rem;
-        }
-        
-        #c2:hover,
-        #c2:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #c2:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 15rem;
-        }
-        
-        #c3:hover,
-        #c3:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #c3:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 66rem;
-        }
-        
-        #c4:hover,
-        #c4:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #c4:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 63rem;
-        }
-        
-        #c5:hover,
-        #c5:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #c5:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 76rem;
-        }
-        
-        #CategoriesLast:hover,
-        #CategoriesLast:hover>a {
-            color: #fff;
-            background-color: #fd8300;
-        }
-        
-        #CategoriesLast:hover>a::after {
-            content: url(../css/img/arr-asidehover.png);
-            left: 84rem;
-        }
-        
-        #cat1:hover,
-        #cat1:hover a {
-            color: #666666;
-            background-color: #cecedd;
-        }
-        
-        #cat2:hover,
-        #cat2:hover a {
-            color: #666666;
-            background-color: #cecedd;
-        }
-        
-        #cat3:hover,
-        #cat3:hover a {
-            color: #666666;
-            background-color: #cecedd;
-        }
-        
-        #cat3 {
-            box-shadow: inset 0rem -1rem 0rem #cecedd;
-        }
-        
-        .Categories a {
-            margin-left: 15rem;
-            color: #25252c;
-            font-size: 14rem;
-            font-family: "Arial";
-            text-decoration: none;
-            line-height: 44rem;
-        }
-        
-        #c1 a::after {
-            left: 64rem;
-        }
-        
-        #c2 a::after {
-            left: 18rem;
-        }
-        
-        #c3 a::after {
-            left: 68rem;
-        }
-        
-        #c4 a::after {
-            left: 68rem;
-        }
-        
-        #c5 a::after {
-            left: 80rem;
-        }
-        
-        #CategoriesLast a::after {
-            left: 89rem;
-        }
-        
-        #cat1 a::after {
-            content: "";
-        }
-        
-        #cat2 a::after {
-            content: "";
-        }
-        
-        #cat3 a::after {
-            content: "";
-        }
-        
-        .Categories a::after {
-            content: url(../css/img/arr-aside.png);
-            position: relative;
-        } 
-        .menu li a {
-            position: relative;
-            color: #25252c;
-        }
-        */ -->
 
 </html>
