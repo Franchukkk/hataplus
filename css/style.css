@@ -1032,10 +1032,15 @@ figure img {
     height: 100px;
 }
 
-input {
+input{
+    width: 210rem;
     border: none;
     outline: none;
     padding-left: 15px;
+}
+
+input::placeholder,
+textarea::placeholder{
     font-size: 13px;
     line-height: 21px;
     color: #9999a6;
@@ -1045,7 +1050,6 @@ input {
 
 .callform h4 {
     font-size: 14px;
-    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -1071,17 +1075,12 @@ input {
     width: 460px;
 }
 
-td.td-text {
-    padding-bottom: 64px;
-}
-
-.send {
-    width: 80.36px;
-    cursor: url(../css/cursor\ \(1\).cur), auto;
-    border-radius: 21px;
-    background-color: #fd8300;
-    padding: 12rem 31rem;
-    transition: 0.2s;
+textarea{
+    width: 467rem;
+    padding: 15rem;
+    padding-bottom: 5rem;
+    border: none;
+    outline: none;
 }
 
 .send a {
@@ -1092,9 +1091,14 @@ td.td-text {
     font-family: "Arial";
     text-align: center;
     text-decoration: none;
+    cursor: url(../css/cursor\ \(1\).cur), auto;
+    border-radius: 21px;
+    background-color: #fd8300;
+    padding: 13rem 31rem;
+    transition: 0.2s;
 }
 
-.send:hover {
+.send:hover>a {
     background-color: #fff;
 }
 
@@ -1106,13 +1110,13 @@ td.td-text {
     margin-left: 12rem;
     display: flex;
     column-gap: 30rem;
+    padding-top: 12rem;
 }
 
-.tick {
-    padding-top: 15px;
-}
 
-.bottom-undertable .tick a:last-child {
+.tick p {
+    position: relative;
+    top: 3rem;
     font-size: 13rem;
     line-height: 21rem;
     color: #666666;
@@ -1120,18 +1124,33 @@ td.td-text {
     text-decoration: none;
 }
 
-.bottom-undertable .tick a:first-child::before {
-    content: url(../css/img/notick.png);
-    position: relative;
-    top: 2rem;
-    margin-right: 10px;
+.tick input {
+    background-color: #fff;
+    margin-right: 7rem;
 }
 
-.bottom-undertable .tick a:first-child:hover:before {
-    content: url(../css/img/tick.png);
+label input {
+    display: none;
+}
+
+label span {
     position: relative;
     top: 2rem;
-    margin-right: 10px;
+    margin-right: 5rem;
+    padding: 7rem;
+    border: 1px solid gray;
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 2px;
+}
+
+[type=checkbox]:checked+span:before {
+    content: url(../css/img/tick.png);
+    position: absolute;
+    top: -7px;
+    right: 2.35px;
+    font-size: 23px;
+    color: green;
 }
 
 .box-shadow {

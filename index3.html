@@ -11,30 +11,30 @@
 
 <body>
     <header>
-            <div class="header-line">
-                <div class="wrapper flex-between">
-                    <div class="top-line-navigation">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Головна</a></li>
-                                <li><a href="#">Про компанію</a></li>
-                                <li><a href="index2.html">Наші будівлі</a></li>
-                                <li><a href="#">Акції</a></li>
-                                <li><a href="index3.html">Контакти</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="sociality-messengers">
-                        <nav>
-                            <ul class="align-center">
-                                <li><a class="fb" href="#"></a></li>
-                                <li><a class="tw" href="#"></a></li>
-                                <li><a class="inst" href="#"></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+        <div class="header-line">
+            <div class="wrapper flex-between">
+                <div class="top-line-navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="#">Про компанію</a></li>
+                            <li><a href="index2.html">Наші будівлі</a></li>
+                            <li><a href="#">Акції</a></li>
+                            <li><a href="index3.html">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sociality-messengers">
+                    <nav>
+                        <ul class="align-center">
+                            <li><a class="fb" href="#"></a></li>
+                            <li><a class="tw" href="#"></a></li>
+                            <li><a class="inst" href="#"></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
+        </div>
         <div class="top-line-contacts box-shadow">
             <div class="wrapper flex-between align-center">
                 <div class="logo">
@@ -91,7 +91,10 @@
             </div>
             <hr id="hr2">
             <div class="geolocation">
-                <div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.5655972552404!2d26.446085711829152!3d49.49213690242563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4731e438332931c9%3A0x3c0326f1361b296c!2sGreek%20Catholic%20Church!5e0!3m2!1sru!2sua!4v1669409724856!5m2!1sru!2sua" width="466" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="google-maps"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.5655972552404!2d26.446085711829152!3d49.49213690242563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4731e438332931c9%3A0x3c0326f1361b296c!2sGreek%20Catholic%20Church!5e0!3m2!1sru!2sua!4v1669409724856!5m2!1sru!2sua"
+                        width="466" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 <div class="callform">
                     <h4>Форма зворотнього зв’язку</h4>
                     <table>
@@ -111,7 +114,7 @@
                             </tr>
                             <tr>
                                 <td class="td-text" colspan="2">
-                                    <input class="message-tema" type="text" placeholder="Текст">
+                                    <textarea placeholder="Текст" name="textarea" id="textarea" cols="30" rows="6"></textarea>
                                 </td>
                             </tr>
                         </tbody>
@@ -122,7 +125,13 @@
                             <a href="">Відправити</a>
                         </div>
                         <div class="tick">
-                            <a href="#">Я бажаю отримувати останні новини</a>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="tick" id="tick" checked>
+                                    <span></span>
+                                    <label for="tick">Я бажаю отримувати останні новини</label>
+                                </label>
+                            </p>
                         </div>
                     </div>
                 </div>
