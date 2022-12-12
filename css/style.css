@@ -1138,7 +1138,7 @@ textarea {
 
 .check+label {
     position: relative;
-    padding: 0 20rem;   
+    padding: 0 20rem;
 }
 
 .check+label::before,
@@ -1160,7 +1160,7 @@ textarea {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-label>p{
+label>p {
     margin-left: 25px;
 }
 
@@ -1175,6 +1175,6 @@ label>p{
     box-sizing: border-box;
 }
 
-textarea{
-font-family: Arial;
+textarea {
+    font-family: Arial;
 }
