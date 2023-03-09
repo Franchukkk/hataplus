@@ -617,77 +617,6 @@ aside {
 }
 
 
-@media screen and (min-width: 935px){
-    .aside-bar {
-        position: sticky;
-    }
-
-    .top-line-contacts {
-        padding-top: 80rem;
-    }
-
-    aside{
-        width: 220rem;
-        margin: 0;
-    }
-
-    .aside-bar{
-        width: 220rem;
-    }
-
-    .line:before {
-        content: '';
-        position: absolute;
-        left: -18rem;
-        width: 1rem;
-        height: 51rem;
-        background-color: #e4e4ec;
-    }
-
-    .header-line{
-        position: fixed;
-    }
-
-    article{
-        max-width: 670rem;
-        text-align: left;
-        margin: 0;
-    }
-
-    div.OurHouses h2 {
-        text-align: left;
-    }
-
-    .TheBestMonthOfferText {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 580px){
-    html{
-        font-size: 1px;
-    }
-
-    .header-line > div{
-        justify-content: space-between;
-    }
-
-    .top-line-navigation{
-        display: flex;
-    }
-
-    .burger{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 580px){
-    .header-line > div {
-        justify-content: space-between;
-    }
-}
-
 .menu-bar a {
     display: block;
     font-size: 14rem;
@@ -792,6 +721,10 @@ hr {
     row-gap: 30px;
 }
 
+.figures-second{
+    max-width: 910rem;
+}
+
 figure {
     position: relative;
 }
@@ -874,6 +807,10 @@ figure img {
 
 /* index2.html */
 
+.OurBuilds{
+    text-align: center;
+}
+
 .OurBuilds,
 .contacts-and-geo {
     margin-top: 40px;
@@ -906,8 +843,12 @@ figure img {
     margin-bottom: 26px;
 }
 
+.table{
+    overflow-x: scroll;
+}
+
 .OurBuilds table {
-    width: 960px;
+    min-width: 960px;
     border-collapse: collapse;
     border-radius: 3px;
     overflow: hidden;
@@ -936,6 +877,11 @@ figure img {
     font-family: "Roboto Slab";
     text-align: right;
     padding-right: 20px;
+}
+
+iframe{
+    width: 300px;
+    height: 300px;
 }
 
 .OurBuilds td {
@@ -992,7 +938,7 @@ figure img {
 #hr2 {
     border: none;
     border-top: 1px solid #e4e4ec;
-    width: 960px;
+    max-width: 960px;
     margin-bottom: 36rem;
 }
 
@@ -1090,6 +1036,9 @@ figure img {
 }
 
 .contacts-geo {
+    text-align: center;
+    width: 90%;
+    margin: auto;
     margin-bottom: 33rem;
 }
 
@@ -1099,7 +1048,10 @@ figure img {
 
 .geolocation {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .geolocation table {
@@ -1111,7 +1063,7 @@ figure img {
 }
 
 input {
-    width: 210rem;
+    max-width: 210rem;
     border: none;
     outline: none;
     padding-left: 15px;
@@ -1154,7 +1106,7 @@ textarea::placeholder {
 }
 
 textarea {
-    width: 467rem;
+    max-width: 467rem;
     padding: 15rem;
     padding-bottom: 5rem;
     border: none;
@@ -1164,6 +1116,13 @@ textarea {
 
 .contacts-wrap {
     max-width: 890rem;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding-bottom: 40px;
+}
+
+.contacts-wrap .container{
+    text-align-last: left;
 }
 
 .send a {
@@ -1254,4 +1213,122 @@ label>p {
 
 textarea {
     font-family: Arial;
+}
+
+.callform h4{
+    text-align: center;
+}
+
+.callform .tab {
+    display: block;
+    max-width: 243px;
+    margin: auto;
+}
+
+.callform .tab1 {
+    display: none;
+}
+
+@media screen and (min-width: 935px){
+    .aside-bar {
+        position: sticky;
+    }
+
+    .top-line-contacts {
+        padding-top: 80rem;
+    }
+
+    aside{
+        width: 220rem;
+        margin: 0;
+    }
+
+    .aside-bar{
+        width: 220rem;
+    }
+
+    .line:before {
+        content: '';
+        position: absolute;
+        left: -18rem;
+        width: 1rem;
+        height: 51rem;
+        background-color: #e4e4ec;
+    }
+
+    .header-line{
+        position: fixed;
+    }
+
+    article{
+        max-width: 670rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    div.OurHouses h2 {
+        text-align: left;
+    }
+
+    .TheBestMonthOfferText {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 580px){
+    html{
+        font-size: 1px;
+    }
+
+    .header-line > div{
+        justify-content: space-between;
+    }
+
+    .top-line-navigation{
+        display: flex;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .google-maps iframe{
+        width: 466px;
+    }
+
+    .callform .tab {
+        display: none;
+    }
+
+    .callform .tab1 {
+        display: block;
+    }
+
+    .OurBuilds{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .header-line > div {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    div.contacts-geo{
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    .geolocation{
+        justify-content: start;
+    }
+
+    .contacts-geo{
+        text-align: left;
+    }
 }
