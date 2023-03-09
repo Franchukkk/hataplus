@@ -1215,14 +1215,9 @@ textarea {
     font-family: Arial;
 }
 
-.callform h4{
-    text-align: center;
-}
-
 .callform .tab {
     display: block;
-    max-width: 243px;
-    margin: auto;
+    width: 299px;
 }
 
 .callform .tab1 {
@@ -1313,6 +1308,10 @@ textarea {
 @media screen and (max-width: 580px){
     .header-line > div {
         justify-content: space-between;
+    }
+
+    input {
+        max-width: 282px;
     }
 
 }
