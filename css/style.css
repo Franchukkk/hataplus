@@ -325,7 +325,7 @@ a {
 .wrapper {
     margin: 0 auto;
     box-sizing: border-box;
-    width: 90%;
+    width: 91%;
     max-width: 960rem;
 }
 
@@ -564,7 +564,8 @@ h1 {
     font-size: 30rem;
     font-weight: 700;
     font-family: "Roboto Slab";
-    line-height: 74rem;
+    line-height: 40rem;
+    margin-bottom: 15rem;
 }
     
 article {
@@ -1053,7 +1054,7 @@ iframe{
 }
 
 .phones-container {
-    width: 160rem;
+    width: 210rem;
 }
 
 .container a.mailto {
@@ -1355,14 +1356,14 @@ textarea {
     }
 }
 
-@media screen and (min-width: 935px){
-    .top-line-contacts div{
-        justify-content: space-between;
-        column-gap: 12px;
-        row-gap: 35px;
-        flex-wrap: wrap;
+@media screen and (max-width:1000px){
+    .line::before{
+        display: none;
     }
+}
 
+@media screen and (min-width:1000px){
+    
     .aside-bar {
         position: sticky;
     }
@@ -1378,6 +1379,15 @@ textarea {
 
     .aside-bar{
         width: 220rem;
+    }
+}
+
+@media screen and (min-width: 935px){
+    .top-line-contacts div{
+        justify-content: space-between;
+        column-gap: 12px;
+        row-gap: 35px;
+        flex-wrap: wrap;
     }
 
     .line:before {
