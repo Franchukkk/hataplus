@@ -1097,6 +1097,7 @@ textarea::placeholder {
 }
 
 .callform h4 {
+    text-align: center;
     font-size: 14px;
     color: #24242b;
     font-weight: 700;
@@ -1235,7 +1236,8 @@ textarea {
 
 .callform .tab {
     display: block;
-    width: 299px;
+    width: 320px;
+    margin: auto;
 }
 
 .callform .tab1 {
