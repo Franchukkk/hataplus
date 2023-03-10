@@ -325,6 +325,7 @@ a {
 .wrapper {
     margin: 0 auto;
     box-sizing: border-box;
+    width: 90%;
     max-width: 960rem;
 }
 
@@ -737,10 +738,11 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 730rem;
-    width: 100%;
+    width: 90%;
     column-gap: 10px;
     justify-content: center;
     row-gap: 30px;
+    margin: auto;
 }
 
 .figures-second{
@@ -1347,6 +1349,10 @@ textarea {
     .contacts-geo{
         text-align: left;
     }
+
+    .wrapper{
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 935px){
@@ -1421,5 +1427,10 @@ textarea {
 @media screen and (min-width: 905px){
     .callform h4 {
         text-align: left;
+    }
+
+    .figures {
+        width: 100%;
+        margin: 0;
     }
 }
