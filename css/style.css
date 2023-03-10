@@ -290,7 +290,7 @@ a {
 
 .top-line-contacts div{
     justify-content: center;
-    column-gap: 25px;
+    column-gap: 27px;
     row-gap: 35px;
     flex-wrap: wrap;
 }
