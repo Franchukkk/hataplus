@@ -865,6 +865,21 @@ figure img {
     overflow-x: scroll;
 }
 
+.table table{
+    margin-bottom: 10rem;
+}
+
+.table::-webkit-scrollbar{
+    height: 13rem;
+    background: linear-gradient(to bottom, #fff 40%, #16163f 40%, #16163f 60%, #fff 60%);
+}
+
+.table::-webkit-scrollbar-thumb {
+    width: 80px;
+    border-radius: 10rem;
+    background-color: #fd8300;
+}
+
 .OurBuilds table {
     min-width: 960px;
     border-collapse: collapse;
