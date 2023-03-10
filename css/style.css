@@ -1399,3 +1399,18 @@ textarea {
         margin: 0;
     }
 }
+
+@media screen and (min-width:959px){
+    .table::-webkit-scrollbar{
+        display: none;
+        height: 13rem;
+        background: linear-gradient(to bottom, #fff 40%, #16163f 40%, #16163f 60%, #fff 60%);
+    }
+    
+    .table::-webkit-scrollbar-thumb {
+        display: none;
+        width: 80px;
+        border-radius: 10rem;
+        background-color: #fd8300;
+    }
+}
