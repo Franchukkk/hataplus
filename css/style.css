@@ -56,6 +56,10 @@ body {
     column-gap: 25rem;
 }
 
+.top-line-navigation ul{
+    display: block;
+}
+
 .header-line ul:last-child {
     column-gap: 22rem;
 }
@@ -94,8 +98,24 @@ body {
 }
 
 .top-line-navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    column-gap: 32rem;
+    background-color: #16163f;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 3;
+}
+
+/* .top-line-navigation {
     display: none;
     column-gap: 32rem;
+} */
+
+.none{
+    display: none;
 }
 
 .top-line-navigation a {
@@ -1310,9 +1330,17 @@ textarea {
         row-gap: 35px;
         flex-wrap: wrap;
     }
+
+    .top-line-navigation{
+        position: static;
+    }
+    .top-line-navigation ul{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 580px){
+
     .header-line > div {
         justify-content: space-between;
     }

@@ -18,7 +18,7 @@
                     <div class="burger" id="burger">
                         <span></span>
                     </div>
-                    <div class="top-line-navigation">
+                    <div class="top-line-navigation" id="navigation">
                         <nav>
                             <ul>
                                 <li><a href="index.html">Головна</a></li>
@@ -227,7 +227,18 @@
             <p>&COPY; Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
     </footer>
+    <script>
+        const button = document.getElementById('burger');
+        const navigation = document.getElementById('navigation');
 
+        button.addEventListener('click', function() {
+        if (navigation.style.display === 'none') {
+            navigation.style.display = 'block';
+        } else {
+            navigation.style.display = 'none';
+        }
+        });
+    </script>
 </body>
 
 </html>
