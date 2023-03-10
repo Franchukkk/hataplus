@@ -1158,7 +1158,6 @@ textarea {
     max-width: 960rem;
     flex-wrap: wrap;
     row-gap: 50px;
-    padding-bottom: 40px;
 }
 
 .contacts-wrap .container{
@@ -1356,32 +1355,6 @@ textarea {
     }
 }
 
-@media screen and (max-width:1000px){
-    .line::before{
-        display: none;
-    }
-}
-
-@media screen and (min-width:1000px){
-    
-    .aside-bar {
-        position: sticky;
-    }
-
-    .top-line-contacts {
-        padding-top: 80rem;
-    }
-
-    aside{
-        width: 220rem;
-        margin: 0;
-    }
-
-    .aside-bar{
-        width: 220rem;
-    }
-}
-
 @media screen and (min-width: 935px){
     .top-line-contacts div{
         justify-content: space-between;
@@ -1442,5 +1415,31 @@ textarea {
     .figures {
         width: 100%;
         margin: 0;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .line::before{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px){
+    
+    .aside-bar {
+        position: sticky;
+    }
+
+    .top-line-contacts {
+        padding-top: 80rem;
+    }
+
+    aside{
+        width: 220rem;
+        margin: 0;
+    }
+
+    .aside-bar{
+        width: 220rem;
     }
 }
