@@ -313,6 +313,10 @@ a {
     flex-wrap: wrap;
 }
 
+.contacts-wrap{
+    width: 90%;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -1148,7 +1152,7 @@ textarea {
 }
 
 .contacts-wrap {
-    max-width: 890rem;
+    max-width: 960rem;
     flex-wrap: wrap;
     row-gap: 50px;
     padding-bottom: 40px;
@@ -1411,5 +1415,11 @@ textarea {
         width: 80px;
         border-radius: 10rem;
         background-color: #fd8300;
+    }
+}
+
+@media screen and (min-width: 905px){
+    .callform h4 {
+        text-align: left;
     }
 }
