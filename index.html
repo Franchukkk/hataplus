@@ -230,15 +230,18 @@
     <script>
         const button = document.getElementById('burger');
         const navigation = document.getElementById('navigation');
-
+        let isOpen = false;
+        
         button.addEventListener('click', function() {
-        if (navigation.style.display === 'none') {
-            navigation.style.display = 'block';
-        } else {
-            navigation.style.display = 'none';
-        }
+          if (!isOpen) {
+            navigation.style.top = '60rem';
+            isOpen = true;
+          } else {
+            navigation.style.top = '-100%';
+            isOpen = false;
+          }
         });
-    </script>
+      </script>      
 </body>
 
 </html>

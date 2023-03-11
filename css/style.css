@@ -97,23 +97,17 @@ body {
 }
 
 .top-line-navigation {
-    display: none;
     position: absolute;
     width: 100%;
     left: 0;
-    top: 50px;
+    top: -100%;
     column-gap: 32rem;
     background-color: #16163f;
     text-align: center;
     padding: 15px 0;
     z-index: 3;
+    transition: 1s;
 }
-
-/* .top-line-navigation {
-    display: none;
-    column-gap: 32rem;
-} */
-
 
 .top-line-navigation a {
     color: #b1b1d2;
