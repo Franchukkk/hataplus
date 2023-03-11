@@ -128,7 +128,7 @@ div.active span::after {
     text-align: center;
     padding: 15px 0;
     z-index: 3;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .top-line-navigation a {
@@ -590,6 +590,7 @@ h1 {
 article {
     margin: auto;
     width: 100%;
+    padding-bottom: 20rem;
 }
 
 article p {
@@ -1209,6 +1210,9 @@ textarea {
     display: flex;
     column-gap: 30rem;
     padding-top: 12rem;
+    flex-wrap: wrap-reverse;
+    row-gap: 20px;
+    justify-content: center;
 }
 
 
