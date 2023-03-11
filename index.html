@@ -231,17 +231,21 @@
         const button = document.getElementById('burger');
         const navigation = document.getElementById('navigation');
         let isOpen = false;
-        
-        button.addEventListener('click', function() {
-          if (!isOpen) {
-            navigation.style.top = '60rem';
-            isOpen = true;
-          } else {
-            navigation.style.top = '-100%';
-            isOpen = false;
-          }
+
+        button.addEventListener('click', function () {
+            // додаємо або видаляємо клас "active" відповідно до поточного стану
+            if (isOpen) {
+                button.classList.remove('active');
+                navigation.style.top = '-100%';
+            } else {
+                button.classList.add('active');
+                navigation.style.top = '60rem';
+            }
+            // змінюємо значення змінної isOpen на протилежне
+            isOpen = !isOpen;
         });
-      </script>      
+    </script>
+
 </body>
 
 </html>

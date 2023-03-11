@@ -88,6 +88,25 @@ body {
     height: 2rem;
 }
 
+.active {
+    padding: 0;
+    padding-bottom: 8rem;
+}
+
+div.active span::before {
+    top: 3rem;
+    transform: rotate(45deg);
+}
+
+div.active span::after {
+    bottom: -3rem;
+    transform: rotate(-45deg);
+}
+
+.active span {
+    background-color: transparent;
+}
+
 .burger span:before {
     top: -7rem;
 }
