@@ -44,7 +44,6 @@ body {
 }
 
 .header-line > div{
-    width: 90%;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
@@ -309,7 +308,7 @@ a {
 .top-line-contacts div{
     justify-content: center;
     column-gap: 27px;
-    row-gap: 35px;
+    row-gap: 18px;
     flex-wrap: wrap;
 }
 
@@ -327,6 +326,11 @@ a {
     box-sizing: border-box;
     width: 91%;
     max-width: 960rem;
+}
+
+footer .contacts,
+footer .messenger{
+    padding-left: 24px;
 }
 
 .contacts,
@@ -448,9 +452,8 @@ footer {
 
 .ContactsFooter > div{
     flex-wrap: wrap;
-    justify-content: center;
     column-gap: 10%;
-    row-gap: 25px;
+    row-gap: 18px;
 }
 
 .TheBestMonthOffer sup {
@@ -570,8 +573,7 @@ h1 {
     
 article {
     margin: auto;
-    text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 article p {
@@ -603,14 +605,13 @@ aside {
     display: block;
     top: 35px;
     padding-top: 37rem;
-    width: 90%;
-    margin: auto;
+    width: 100%;
 }
 
 .TextAndAside {
     display: block;
     margin: auto;
-    width: 715rem;
+    width: 100%;
 }
 
 .aside-bar {
@@ -718,7 +719,7 @@ ul.sub-menu a {
 }
 
 hr {
-    max-width: 713rem;
+    width: 100%;
     border: none;
     border-top: 1px solid #e4e4ec;
 }
@@ -739,7 +740,7 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 730rem;
-    width: 90%;
+    width: 100%;
     column-gap: 10px;
     justify-content: center;
     row-gap: 30px;
@@ -778,7 +779,7 @@ figure {
 }
 
 figure img {
-    width: 220rem;
+    width: 300px;
 
 }
 
@@ -793,8 +794,6 @@ figure img {
 }
 
 .ContactsFooter {
-    padding-left: 10%;
-    padding-right: 12%;
     padding-top: 40rem;
     padding-bottom: 30rem;
     background-color: #ededf5;
@@ -1335,12 +1334,28 @@ textarea {
 
 }
 
+@media screen and (max-width: 887px){
+    .ContactsFooter div {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 905px){
+    figure img {
+        width: 220rem;
+    }
+}
+
 @media screen and (min-width: 1000px){
     div.contacts-geo{
         text-align: left;
         width: 100%;
         margin: 0;
     }
+
+    hr {
+        max-width: 713rem;
+    }    
 
     .geolocation{
         justify-content: start;
@@ -1353,11 +1368,26 @@ textarea {
     .wrapper{
         width: auto;
     }
+
+    .figures {
+        justify-content: flex-start;
+    }
+    
+    div.OurHouses h2 {
+        text-align: left;
+    }
+
+    .TextAndAside{
+        max-width: 715rem;
+    }
+
+    article{
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 935px){
     .top-line-contacts div{
-        justify-content: space-between;
         column-gap: 12px;
         row-gap: 35px;
         flex-wrap: wrap;
@@ -1372,23 +1402,20 @@ textarea {
         background-color: #e4e4ec;
     }
 
-    .header-line{
-        position: fixed;
-    }
-
     article{
-        max-width: 670rem;
         text-align: left;
         margin: 0;
-    }
-
-    div.OurHouses h2 {
-        text-align: left;
     }
 
     .TheBestMonthOfferText {
         width: 100%;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 948px){
+    .top-line-contacts div{
+        justify-content: space-between;
     }
 }
 
@@ -1441,5 +1468,10 @@ textarea {
 
     .aside-bar{
         width: 220rem;
+    }
+
+    
+    .header-line{
+        position: fixed;
     }
 }
