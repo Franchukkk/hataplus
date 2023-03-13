@@ -799,6 +799,7 @@ figure {
 figure img {
     width: 250px;
     max-height: 195px;
+    object-fit: cover;
 
 }
 
