@@ -321,15 +321,15 @@ a {
     padding: 30px 0;
 }
 
+header{
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 .top-line-contacts div{
     justify-content: center;
     column-gap: 27px;
     row-gap: 18px;
     flex-wrap: wrap;
-}
-
-.contacts-wrap{
-    width: 90%;
 }
 
 .flex-between {
@@ -604,10 +604,10 @@ article p {
 article a {
     color: #fd8300;
     font-size: 14rem;
+    margin-bottom: 22rem;
     font-weight: bold;
     font-family: "Arial";
     text-decoration: underline;
-    line-height: 55rem;
 }
 
 article a:hover {
@@ -741,6 +741,10 @@ hr {
     border-top: 1px solid #e4e4ec;
 }
 
+.OurHouses{
+    width: 100%;
+}
+
 .OurHouses h2 {
     text-align: center;
     font-size: 24px;
@@ -756,10 +760,8 @@ hr {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 730rem;
     width: 100%;
     column-gap: 10px;
-    justify-content: center;
     row-gap: 30px;
     margin: auto;
 }
@@ -797,6 +799,7 @@ figure {
 
 figure img {
     width: 300px;
+    max-height: 195px;
 
 }
 
@@ -858,22 +861,22 @@ figure img {
 }
 
 .OurBuilds h1 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 .OurBuilds p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
     font-family: "Arial";
 }
 
 .OurBuilds p:last-child {
-    font-size: 13px;
+    font-size: 14rem;
     line-height: 21px;
     color: #666666;
     font-family: "Arial";
@@ -882,6 +885,10 @@ figure img {
 .paragraph {
     margin-top: 22px;
     margin-bottom: 26px;
+}
+
+.paragraph {
+    text-align: left;
 }
 
 .table{
@@ -936,9 +943,14 @@ figure img {
 }
 
 iframe{
-    width: 300px;
+    width: 100%;
     height: 300px;
 }
+
+.google-maps{
+    width: 100%;
+}
+
 
 .OurBuilds td {
     font-size: 14px;
@@ -1092,7 +1104,6 @@ iframe{
 }
 
 .contacts-geo {
-    width: 90%;
     margin: auto;
     margin-bottom: 33rem;
 }
@@ -1134,7 +1145,6 @@ textarea::placeholder {
 }
 
 .callform h4 {
-    text-align: center;
     font-size: 14px;
     color: #24242b;
     font-weight: 700;
@@ -1300,10 +1310,6 @@ textarea {
         display: none;
     }
 
-    .google-maps iframe{
-        width: 466px;
-    }
-
     .callform .tab {
         display: none;
     }
@@ -1343,6 +1349,14 @@ textarea {
     }
 }
 
+
+@media screen and (max-width:904px){
+    .figures{
+        justify-content: center;
+    }
+}
+
+
 @media screen and (max-width: 580px){
     .header-line > div {
         justify-content: space-between;
@@ -1363,6 +1377,20 @@ textarea {
 @media screen and (min-width: 905px){
     figure img {
         width: 220rem;
+    }
+}
+
+@media screen and (min-width:995px){
+    .google-maps{
+        width: auto;
+    }
+
+    iframe{
+        width: 466px;
+    }
+
+    .callform{
+        width: auto;
     }
 }
 
@@ -1470,6 +1498,12 @@ textarea {
     }
 }
 
+@media screen and (min-width: 999px){
+    .figures{
+        max-width: 730rem;
+    }
+}
+
 @media screen and (min-width:1000px){
     
     .aside-bar {
@@ -1492,5 +1526,11 @@ textarea {
     
     .header-line{
         position: fixed;
+    }
+}
+
+@media screen and (min-width:1920px){
+    html{
+        font-size: 1.8px;
     }
 }
