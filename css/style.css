@@ -1416,10 +1416,6 @@ textarea {
     .wrapper{
         width: auto;
     }
-
-    .figures {
-        justify-content: flex-start;
-    }
     
     div.OurHouses h2 {
         text-align: left;
