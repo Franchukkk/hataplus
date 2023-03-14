@@ -267,6 +267,7 @@ a.PhoneLogo1 {
 .sociality-messengers {
     display: flex;
     column-gap: 25rem;
+    align-items: center;
 }
 
 .sociality-messengers a {
@@ -630,6 +631,10 @@ aside {
     width: 100%;
 }
 
+.texasside{
+    justify-content: space-between;
+}
+
 .aside-bar {
     top: 35rem;
     width: 100%;
@@ -746,8 +751,8 @@ hr {
 
 .OurHouses h2 {
     text-align: center;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -762,7 +767,6 @@ hr {
     width: 100%;
     column-gap: 10px;
     row-gap: 30px;
-    margin: auto;
 }
 
 .figures-second{
@@ -798,7 +802,7 @@ figure {
 
 figure img {
     width: 250px;
-    max-height: 195px;
+    max-height: 195rem;
     object-fit: cover;
 
 }
@@ -919,13 +923,13 @@ figure img {
 }
 
 .OurBuilds thead {
-    height: 45px;
+    height: 45rem;
     background-color: #1f1f56;
 }
 
 .OurBuilds th {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -934,13 +938,13 @@ figure img {
 }
 
 .OurBuilds th:last-child {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: right;
-    padding-right: 20px;
+    padding-right: 20rem;
 }
 
 iframe{
@@ -954,8 +958,8 @@ iframe{
 
 
 .OurBuilds td {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
     font-family: "Arial";
     padding-left: 20px;
@@ -991,7 +995,7 @@ iframe{
 }
 
 .OurBuilds a {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 4em;
     text-decoration: underline;
     color: #fd8300;
@@ -1040,8 +1044,8 @@ iframe{
 }
 
 .container h4 {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -1050,14 +1054,14 @@ iframe{
 
 
 .container p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 14rem;
+    line-height: 21rem;
     color: #666666;
     font-family: "Arial";
 }
 
 .container:first-child a {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.65em;
     color: #25252c;
     font-weight: bold;
@@ -1068,7 +1072,7 @@ iframe{
 
 
 .container a {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.95em;
     color: #25252c;
     font-weight: bold;
@@ -1086,8 +1090,8 @@ iframe{
 }
 
 .container a.mailto {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     font-weight: normal;
     text-decoration: underline;
     color: #25252c;
@@ -1130,25 +1134,27 @@ iframe{
 
 input {
     max-width: 210rem;
+    min-height: 30rem;
     border: none;
     outline: none;
-    padding-left: 15px;
+    padding-left: 15rem;
 }
 
 input::placeholder,
 textarea::placeholder {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #9999a6;
     font-style: italic;
     font-family: "Arial";
 }
 
 .callform h4 {
-    font-size: 14px;
+    font-size: 14rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    text-align: center;
     margin-left: 12rem;
 }
 
@@ -1161,7 +1167,8 @@ textarea::placeholder {
 }
 
 .callform td {
-    height: 40px;
+    height: 40rem;
+    width: 100%;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
@@ -1173,7 +1180,8 @@ textarea::placeholder {
 
 textarea {
     max-width: 467rem;
-    padding: 15px;
+    min-height: 110rem;
+    padding: 15rem;
     padding-bottom: 5rem;
     border: none;
     outline: none;
@@ -1191,8 +1199,8 @@ textarea {
 }
 
 .send a {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: bold;
     font-family: "Arial";
@@ -1380,7 +1388,7 @@ textarea {
     }
 }
 
-@media screen and (min-width:995px){
+@media screen and (min-width:996px){
     .google-maps{
         width: auto;
     }
@@ -1392,12 +1400,17 @@ textarea {
     .callform{
         width: auto;
     }
+
+    .callform h4 {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1000px){
     div.contacts-geo{
         text-align: left;
         width: 100%;
+        max-width: 890rem;
         margin: 0;
     }  
 
@@ -1475,10 +1488,6 @@ textarea {
 }
 
 @media screen and (min-width: 905px){
-    .callform h4 {
-        text-align: left;
-    }
-
     .figures {
         width: 100%;
     }
@@ -1516,9 +1525,9 @@ textarea {
     }
 }
 
-@media screen and (min-width:2560px){
+@media screen and (min-width:2200px){
     html{
-        font-size: 1.8px;
+        font-size: 2px;
     }
 
     .top-line-contacts{
@@ -1528,14 +1537,31 @@ textarea {
     .tick p {
         position: relative;
         top: -5px;
-        font-size: 13px;
+        font-size: 13rem;
         line-height: 21rem;
         color: #666666;
         font-family: "Arial";
         text-decoration: none;
     }
 
+    .OurBuilds table {
+        min-height: 291rem;
+    }
+
     .container:last-child {
         width: auto;
+    }
+
+    .contacts-wrap {
+        margin-bottom: 35rem;
+    }
+
+    iframe{
+        width: 100%;
+        min-height: 300rem;
+    }
+
+    .google-maps{
+        width: 50%;
     }
 }
