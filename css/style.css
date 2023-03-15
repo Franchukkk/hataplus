@@ -878,8 +878,8 @@ figure img {
 }
 
 .paragraph {
-    margin-top: 22px;
-    margin-bottom: 26px;
+    margin-top: 22rem;
+    margin-bottom: 26rem;
 }
 
 .paragraph {
@@ -1006,7 +1006,7 @@ iframe{
 }
 
 .paragraph2 {
-    margin-top: 20px;
+    margin-top: 20rem;
 }
 
 /* index3.html */
@@ -1026,8 +1026,8 @@ iframe{
 }
 
 .contacts-and-geo h2 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -1549,7 +1549,7 @@ textarea {
     }
 
     .contacts-wrap {
-        margin-bottom: 35rem;
+        margin-bottom: 15rem;
     }
 
     iframe{
@@ -1589,5 +1589,76 @@ textarea {
         border-bottom: 2px solid #1f1f56;
         transform: rotate(-45deg);
         box-sizing: border-box;
+    }
+
+    .line:before {
+        content: '';
+        position: absolute;
+        left: -34rem;
+        width: 1rem;
+        height: 51rem;
+        background-color: #e4e4ec;
+    }
+
+    .OurBuilds th,
+    .OurBuilds td {
+        padding-left: 20rem;
+    }
+
+    .OurBuilds tr>td:last-child {
+        padding-right: 20rem;
+    }
+
+    a.fb {
+        background-position: 0px 0;
+        background-size: 1000%;
+        width: 10rem;
+        height: 19rem;
+    }
+    
+    a.tw {
+        background-position: -12rem 0;
+        background-size: 600%;
+        width: 18rem;
+        height: 17rem;
+    }
+    
+    a.inst {
+        background-position: -33rem 0;
+        background-size: 600%;
+        width: 19rem;
+        height: 19rem;
+    }
+
+    .phone::before {
+        background-position: -90px 0;
+        background-size: 600%;
+        width: 16rem;
+        height: 17rem;
+    }
+
+    .email::before {
+        background-position: -130px 0;
+        background-size: 600%;
+        width: 17rem;
+        height: 13rem;
+    }
+
+    .skype::before {
+        background-position: -176px 0;
+        background-size: 600%;
+        width: 18rem;
+        height: 19rem;
+    }
+
+    .callform h4 {
+        font-size: 14rem;
+        color: #24242b;
+        font-weight: 700;
+        font-family: "Roboto Slab";
+        text-align: center;
+        margin-left: 5rem;
+        text-align: left;
+        margin-bottom: 15rem;
     }
 }
